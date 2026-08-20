@@ -1,0 +1,7 @@
+/.idea
+/.vscode
+/target
+/scratch
+
+# Runtime output
+cs2-dumper.log

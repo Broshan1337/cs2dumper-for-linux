@@ -1,0 +1,44 @@
+{
+  "libclient.so": {
+    "dwCSGOInput": 72840472,
+    "dwEntityList": 73069568,
+    "dwGameEntitySystem": 77883344,
+    "dwGameEntitySystem_highestEntityIndex": 8352,
+    "dwGameRules": 75956436,
+    "dwGlobalVars": 72794296,
+    "dwGlowManager": 75484984,
+    "dwLocalPlayerController": 75300280,
+    "dwLocalPlayerPawn": 75509224,
+    "dwPlantedC4": 75228640,
+    "dwPrediction": 75508896,
+    "dwSensitivity": 75501784,
+    "dwSensitivity_sensitivity": 88,
+    "dwViewAngles": 72841824,
+    "dwViewMatrix": 75538048,
+    "dwViewRender": 75538320
+  },
+  "libengine2.so": {
+    "dwBuildNumber": 10328180,
+    "dwNetworkGameClient": 10660992,
+    "dwNetworkGameClient_clientTickCount": 904,
+    "dwNetworkGameClient_deltaTick": 908,
+    "dwNetworkGameClient_isBackgroundMap": 648,
+    "dwNetworkGameClient_localPlayer": 640,
+    "dwNetworkGameClient_maxClients": 576,
+    "dwNetworkGameClient_serverTickCount": 604,
+    "dwNetworkGameClient_signOnState": 644,
+    "dwWindowHeight": 10372580,
+    "dwWindowWidth": 10372576
+  },
+  "libinputsystem.so": {
+    "dwInputSystem": 523200
+  },
+  "libmatchmaking.so": {
+    "dwGameTypes": 3785856,
+    "dwGameTypes_mapName": 3786144
+  },
+  "libpanorama.so": {
+    "HUD_CONTEXT": 6801056,
+    "MENU_CONTEXT": 6801024
+  }
+}
