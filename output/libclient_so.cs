@@ -1,9 +1,9 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-20 19:49:07.583476765 UTC
+// 2026-08-25 09:11:58.966983803 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: libclient.so
-    // Class count: 563
+    // Class count: 567
     // Enum count: 14
     public static class LibclientSo {
         // Alignment: 4
@@ -2295,6 +2295,16 @@ namespace CS2Dumper.Schemas {
         // Field count: 0
         public static class C_Item_Healthshot {
         }
+        // Parent: C_BaseEntity
+        // Field count: 6
+        public static class CCSCustomHudLayout {
+            public const nint m_strLayout = 0x788; // CUtlSymbolLarge
+            public const nint m_vecPlayerLayoutStates = 0x790; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+            public const nint m_globalLayoutState = 0x7F8; // CCSCustomHudLayoutState
+            public const nint m_vecPanelIds = 0x908; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x920; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x938; // C_NetworkUtlVectorBase<CUtlString>
+        }
         // Parent: None
         // Field count: 3
         public static class CEntityInstance {
@@ -2848,6 +2858,10 @@ namespace CS2Dumper.Schemas {
             public const nint m_flThrowVelocity = 0x860; // float32
             public const nint m_vSmokeColor = 0x864; // Vector
             public const nint m_szAnimClass = 0x870; // CGlobalSymbol
+        }
+        // Parent: None
+        // Field count: 0
+        public static class CCSCustomHudLayout_API {
         }
         // Parent: None
         // Field count: 6
@@ -4925,6 +4939,14 @@ namespace CS2Dumper.Schemas {
         // Field count: 0
         public static class C_CSGO_MapPreviewCameraPath_API {
         }
+        // Parent: None
+        // Field count: 4
+        public static class CCSCustomHudLayoutState {
+            public const nint m_bInputCaptureEnabled = 0x30; // bool
+            public const nint m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
+            public const nint m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
+            public const nint m_playerSlot = 0x108; // CPlayerSlot
+        }
         // Parent: C_CSGO_TeamIntroCharacterPosition
         // Field count: 0
         public static class CCSGO_WingmanIntroCharacterPosition {
@@ -5095,6 +5117,13 @@ namespace CS2Dumper.Schemas {
         // Parent: C_BaseModelEntity
         // Field count: 0
         public static class C_TriggerVolume {
+        }
+        // Parent: None
+        // Field count: 3
+        public static class CCSPlayerCamera {
+            public const nint m_hPawn = 0x77C; // CHandle<C_CSPlayerPawnBase>
+            public const nint m_bEnabled = 0x780; // bool
+            public const nint m_bIsControllingAngles = 0x781; // bool
         }
         // Parent: None
         // Field count: 1

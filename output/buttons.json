@@ -1,20 +1,20 @@
 {
   "libclient.so": {
-    "attack": 75467344,
-    "attack2": 75467184,
-    "back": 75466288,
-    "duck": 75465104,
-    "forward": 75466448,
-    "jump": 75465264,
-    "left": 75466128,
-    "lookatweapon": 75602256,
-    "reload": 75467504,
-    "right": 75465968,
-    "showscores": 75602576,
-    "sprint": 75467664,
-    "turnleft": 75467024,
-    "turnright": 75466864,
-    "use": 75465424,
-    "zoom": 75602416
+    "attack": 75615824,
+    "attack2": 75615664,
+    "back": 75614768,
+    "duck": 75613584,
+    "forward": 75614928,
+    "jump": 75613744,
+    "left": 75614608,
+    "lookatweapon": 75750736,
+    "reload": 75615984,
+    "right": 75614448,
+    "showscores": 75751056,
+    "sprint": 75616144,
+    "turnleft": 75615504,
+    "turnright": 75615344,
+    "use": 75613904,
+    "zoom": 75750896
   }
 }
