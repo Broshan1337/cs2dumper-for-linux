@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-20 19:49:07.583476765 UTC
+// 2026-08-25 09:11:58.966983803 UTC
 
 #pragma once
 
@@ -10,22 +10,22 @@ namespace cs2_dumper {
     namespace offsets {
         // Module: libclient.so
         namespace libclient_so {
-            constexpr std::ptrdiff_t dwCSGOInput = 0x4577518;
-            constexpr std::ptrdiff_t dwEntityList = 0x45AF400;
-            constexpr std::ptrdiff_t dwGameEntitySystem = 0x4A467D0;
+            constexpr std::ptrdiff_t dwCSGOInput = 0x45996D8;
+            constexpr std::ptrdiff_t dwEntityList = 0x45D1580;
+            constexpr std::ptrdiff_t dwGameEntitySystem = 0x4A6AD10;
             constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x20A0;
-            constexpr std::ptrdiff_t dwGameRules = 0x48700D4;
-            constexpr std::ptrdiff_t dwGlobalVars = 0x456C0B8;
-            constexpr std::ptrdiff_t dwGlowManager = 0x47FCF38;
-            constexpr std::ptrdiff_t dwLocalPlayerController = 0x47CFDB8;
-            constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x4802DE8;
-            constexpr std::ptrdiff_t dwPlantedC4 = 0x47BE5E0;
-            constexpr std::ptrdiff_t dwPrediction = 0x4802CA0;
-            constexpr std::ptrdiff_t dwSensitivity = 0x48010D8;
+            constexpr std::ptrdiff_t dwGameRules = 0x48944D4;
+            constexpr std::ptrdiff_t dwGlobalVars = 0x458E278;
+            constexpr std::ptrdiff_t dwGlowManager = 0x4821338;
+            constexpr std::ptrdiff_t dwLocalPlayerController = 0x47F41D8;
+            constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x48271E8;
+            constexpr std::ptrdiff_t dwPlantedC4 = 0x47E29E0;
+            constexpr std::ptrdiff_t dwPrediction = 0x48270A0;
+            constexpr std::ptrdiff_t dwSensitivity = 0x48254D8;
             constexpr std::ptrdiff_t dwSensitivity_sensitivity = 0x58;
-            constexpr std::ptrdiff_t dwViewAngles = 0x4577A60;
-            constexpr std::ptrdiff_t dwViewMatrix = 0x4809E80;
-            constexpr std::ptrdiff_t dwViewRender = 0x4809F90;
+            constexpr std::ptrdiff_t dwViewAngles = 0x4599C20;
+            constexpr std::ptrdiff_t dwViewMatrix = 0x482E280;
+            constexpr std::ptrdiff_t dwViewRender = 0x482E390;
         }
         // Module: libengine2.so
         namespace libengine2_so {
@@ -52,8 +52,8 @@ namespace cs2_dumper {
         }
         // Module: libpanorama.so
         namespace libpanorama_so {
-            constexpr std::ptrdiff_t HUD_CONTEXT = 0x67C6A0;
-            constexpr std::ptrdiff_t MENU_CONTEXT = 0x67C680;
+            constexpr std::ptrdiff_t HUD_CONTEXT = 0x67CA40;
+            constexpr std::ptrdiff_t MENU_CONTEXT = 0x67CA20;
         }
     }
 }

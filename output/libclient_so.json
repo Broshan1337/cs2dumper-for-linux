@@ -452,6 +452,33 @@
         ],
         "parent": null
       },
+      "CCSCustomHudLayout": {
+        "fields": {
+          "m_globalLayoutState": 2040,
+          "m_strLayout": 1928,
+          "m_vecClassNames": 2336,
+          "m_vecDialogVariableNames": 2360,
+          "m_vecPanelIds": 2312,
+          "m_vecPlayerLayoutStates": 1936
+        },
+        "metadata": [],
+        "parent": "C_BaseEntity"
+      },
+      "CCSCustomHudLayoutState": {
+        "fields": {
+          "m_bInputCaptureEnabled": 48,
+          "m_playerSlot": 264,
+          "m_vecDialogVariableStrings": 80,
+          "m_vecHasClasses": 56
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomHudLayout_API": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
       "CCSGO_EndOfMatchLineupEnd": {
         "fields": {},
         "metadata": [],
@@ -540,6 +567,15 @@
         },
         "metadata": [],
         "parent": "CPlayer_CameraServices"
+      },
+      "CCSPlayerCamera": {
+        "fields": {
+          "m_bEnabled": 1920,
+          "m_bIsControllingAngles": 1921,
+          "m_hPawn": 1916
+        },
+        "metadata": [],
+        "parent": null
       },
       "CCSPlayerController": {
         "fields": {
