@@ -4,14 +4,14 @@
     "AnimationSystem_001": 3831024
   },
   "libclient.so": {
-    "ClientToolsInfo_001": 25758032,
-    "EmptyWorldService001_Client": 20557888,
-    "GameClientExports001": 25756112,
-    "LegacyGameUI001": 28403056,
-    "Source2Client002": 25756304,
-    "Source2ClientConfig001": 20211024,
-    "Source2ClientPrediction001": 26285680,
-    "Source2ClientUI001": 27653712
+    "ClientToolsInfo_001": 25875472,
+    "EmptyWorldService001_Client": 20735504,
+    "GameClientExports001": 25873552,
+    "LegacyGameUI001": 28520496,
+    "Source2Client002": 25873744,
+    "Source2ClientConfig001": 20376032,
+    "Source2ClientPrediction001": 26403120,
+    "Source2ClientUI001": 27771152
   },
   "libengine2.so": {
     "BenchmarkService001": 3943408,
@@ -91,7 +91,7 @@
     "SerializedEntitiesVersion001": 3034208
   },
   "libpanorama.so": {
-    "PanoramaUIEngine001": 3588176
+    "PanoramaUIEngine001": 3589072
   },
   "libpanorama_text_pango.so": {
     "PanoramaTextServices001": 1534208
@@ -125,16 +125,16 @@
     "SchemaSystem_001": 238512
   },
   "libserver.so": {
-    "EmptyWorldService001_Server": 20576256,
-    "EntitySubclassUtilsV001": 15392208,
-    "NavGameTest001": 29440672,
-    "ServerToolsInfo_001": 26023680,
-    "Source2GameClients001": 26023664,
-    "Source2GameDirector001": 11334656,
-    "Source2GameEntities001": 26023520,
-    "Source2Server001": 26022928,
-    "Source2ServerConfig001": 19831008,
-    "customnavsystem001": 13669552
+    "EmptyWorldService001_Server": 20846080,
+    "EntitySubclassUtilsV001": 15466832,
+    "NavGameTest001": 29620192,
+    "ServerToolsInfo_001": 26203200,
+    "Source2GameClients001": 26203184,
+    "Source2GameDirector001": 11366896,
+    "Source2GameEntities001": 26203040,
+    "Source2Server001": 26202448,
+    "Source2ServerConfig001": 20079344,
+    "customnavsystem001": 13744176
   },
   "libsoundsystem.so": {
     "SoundBugBugService001_Client": 4379552,
@@ -147,13 +147,13 @@
     "SteamAudio001": 2139312
   },
   "libtier0.so": {
-    "TestScriptMgr001": 2386256,
+    "TestScriptMgr001": 2386384,
     "VEngineCvar007": 1392992,
-    "VProcessUtils002": 2317552,
-    "VStringTokenSystem001": 2572048
+    "VProcessUtils002": 2317680,
+    "VStringTokenSystem001": 2572176
   },
   "libv8system.so": {
-    "Source2V8System001": 228896
+    "Source2V8System001": 229920
   },
   "libvphysics2.so": {
     "VPhysics2_Interface_001": 566768
