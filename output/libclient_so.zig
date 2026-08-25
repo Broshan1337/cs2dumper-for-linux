@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-20 19:49:07.583476765 UTC
+// 2026-08-25 09:11:58.966983803 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: libclient.so
-        // Class count: 563
+        // Class count: 567
         // Enum count: 14
         pub const libclient_so = struct {
             // Alignment: 4
@@ -2296,6 +2296,16 @@ pub const cs2_dumper = struct {
             // Field count: 0
             pub const C_Item_Healthshot = struct {
             };
+            // Parent: C_BaseEntity
+            // Field count: 6
+            pub const CCSCustomHudLayout = struct {
+                pub const m_strLayout: usize = 0x788; // CUtlSymbolLarge
+                pub const m_vecPlayerLayoutStates: usize = 0x790; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                pub const m_globalLayoutState: usize = 0x7F8; // CCSCustomHudLayoutState
+                pub const m_vecPanelIds: usize = 0x908; // C_NetworkUtlVectorBase<CUtlString>
+                pub const m_vecClassNames: usize = 0x920; // C_NetworkUtlVectorBase<CUtlString>
+                pub const m_vecDialogVariableNames: usize = 0x938; // C_NetworkUtlVectorBase<CUtlString>
+            };
             // Parent: None
             // Field count: 3
             pub const CEntityInstance = struct {
@@ -2849,6 +2859,10 @@ pub const cs2_dumper = struct {
                 pub const m_flThrowVelocity: usize = 0x860; // float32
                 pub const m_vSmokeColor: usize = 0x864; // Vector
                 pub const m_szAnimClass: usize = 0x870; // CGlobalSymbol
+            };
+            // Parent: None
+            // Field count: 0
+            pub const CCSCustomHudLayout_API = struct {
             };
             // Parent: None
             // Field count: 6
@@ -4926,6 +4940,14 @@ pub const cs2_dumper = struct {
             // Field count: 0
             pub const C_CSGO_MapPreviewCameraPath_API = struct {
             };
+            // Parent: None
+            // Field count: 4
+            pub const CCSCustomHudLayoutState = struct {
+                pub const m_bInputCaptureEnabled: usize = 0x30; // bool
+                pub const m_vecHasClasses: usize = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
+                pub const m_vecDialogVariableStrings: usize = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
+                pub const m_playerSlot: usize = 0x108; // CPlayerSlot
+            };
             // Parent: C_CSGO_TeamIntroCharacterPosition
             // Field count: 0
             pub const CCSGO_WingmanIntroCharacterPosition = struct {
@@ -5096,6 +5118,13 @@ pub const cs2_dumper = struct {
             // Parent: C_BaseModelEntity
             // Field count: 0
             pub const C_TriggerVolume = struct {
+            };
+            // Parent: None
+            // Field count: 3
+            pub const CCSPlayerCamera = struct {
+                pub const m_hPawn: usize = 0x77C; // CHandle<C_CSPlayerPawnBase>
+                pub const m_bEnabled: usize = 0x780; // bool
+                pub const m_bIsControllingAngles: usize = 0x781; // bool
             };
             // Parent: None
             // Field count: 1

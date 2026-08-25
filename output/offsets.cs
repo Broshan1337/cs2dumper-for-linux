@@ -1,25 +1,25 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-20 19:49:07.583476765 UTC
+// 2026-08-25 09:11:58.966983803 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint dwCSGOInput = 0x4577518;
-        public const nint dwEntityList = 0x45AF400;
-        public const nint dwGameEntitySystem = 0x4A467D0;
+        public const nint dwCSGOInput = 0x45996D8;
+        public const nint dwEntityList = 0x45D1580;
+        public const nint dwGameEntitySystem = 0x4A6AD10;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x20A0;
-        public const nint dwGameRules = 0x48700D4;
-        public const nint dwGlobalVars = 0x456C0B8;
-        public const nint dwGlowManager = 0x47FCF38;
-        public const nint dwLocalPlayerController = 0x47CFDB8;
-        public const nint dwLocalPlayerPawn = 0x4802DE8;
-        public const nint dwPlantedC4 = 0x47BE5E0;
-        public const nint dwPrediction = 0x4802CA0;
-        public const nint dwSensitivity = 0x48010D8;
+        public const nint dwGameRules = 0x48944D4;
+        public const nint dwGlobalVars = 0x458E278;
+        public const nint dwGlowManager = 0x4821338;
+        public const nint dwLocalPlayerController = 0x47F41D8;
+        public const nint dwLocalPlayerPawn = 0x48271E8;
+        public const nint dwPlantedC4 = 0x47E29E0;
+        public const nint dwPrediction = 0x48270A0;
+        public const nint dwSensitivity = 0x48254D8;
         public const nint dwSensitivity_sensitivity = 0x58;
-        public const nint dwViewAngles = 0x4577A60;
-        public const nint dwViewMatrix = 0x4809E80;
-        public const nint dwViewRender = 0x4809F90;
+        public const nint dwViewAngles = 0x4599C20;
+        public const nint dwViewMatrix = 0x482E280;
+        public const nint dwViewRender = 0x482E390;
     }
     // Module: libengine2.so
     public static class Libengine2So {
@@ -46,7 +46,7 @@ namespace CS2Dumper.Offsets {
     }
     // Module: libpanorama.so
     public static class LibpanoramaSo {
-        public const nint HUD_CONTEXT = 0x67C6A0;
-        public const nint MENU_CONTEXT = 0x67C680;
+        public const nint HUD_CONTEXT = 0x67CA40;
+        public const nint MENU_CONTEXT = 0x67CA20;
     }
 }

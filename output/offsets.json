@@ -1,21 +1,21 @@
 {
   "libclient.so": {
-    "dwCSGOInput": 72840472,
-    "dwEntityList": 73069568,
-    "dwGameEntitySystem": 77883344,
+    "dwCSGOInput": 72980184,
+    "dwEntityList": 73209216,
+    "dwGameEntitySystem": 78032144,
     "dwGameEntitySystem_highestEntityIndex": 8352,
-    "dwGameRules": 75956436,
-    "dwGlobalVars": 72794296,
-    "dwGlowManager": 75484984,
-    "dwLocalPlayerController": 75300280,
-    "dwLocalPlayerPawn": 75509224,
-    "dwPlantedC4": 75228640,
-    "dwPrediction": 75508896,
-    "dwSensitivity": 75501784,
+    "dwGameRules": 76104916,
+    "dwGlobalVars": 72934008,
+    "dwGlowManager": 75633464,
+    "dwLocalPlayerController": 75448792,
+    "dwLocalPlayerPawn": 75657704,
+    "dwPlantedC4": 75377120,
+    "dwPrediction": 75657376,
+    "dwSensitivity": 75650264,
     "dwSensitivity_sensitivity": 88,
-    "dwViewAngles": 72841824,
-    "dwViewMatrix": 75538048,
-    "dwViewRender": 75538320
+    "dwViewAngles": 72981536,
+    "dwViewMatrix": 75686528,
+    "dwViewRender": 75686800
   },
   "libengine2.so": {
     "dwBuildNumber": 10328180,
@@ -38,7 +38,7 @@
     "dwGameTypes_mapName": 3786144
   },
   "libpanorama.so": {
-    "HUD_CONTEXT": 6801056,
-    "MENU_CONTEXT": 6801024
+    "HUD_CONTEXT": 6801984,
+    "MENU_CONTEXT": 6801952
   }
 }
