@@ -1850,9 +1850,9 @@
         "fields": {
           "m_globalLayoutState": 2040,
           "m_strLayout": 1928,
-          "m_vecClassNames": 2480,
-          "m_vecDialogVariableNames": 2504,
-          "m_vecPanelIds": 2456,
+          "m_vecClassNames": 2472,
+          "m_vecDialogVariableNames": 2496,
+          "m_vecPanelIds": 2448,
           "m_vecPlayerLayoutStates": 1936
         },
         "metadata": [],
@@ -1860,8 +1860,8 @@
       },
       "CCSCustomHudLayoutState": {
         "fields": {
-          "m_bInputCaptureEnabled": 48,
-          "m_playerSlot": 408,
+          "m_bInputCaptureEnabled": 52,
+          "m_playerSlot": 48,
           "m_vecDialogVariableStrings": 152,
           "m_vecHasClasses": 56
         },
