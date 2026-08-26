@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-25 09:11:58.966983803 UTC
+// 2026-08-26 21:20:27.991216351 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -12,14 +12,14 @@ pub mod cs2_dumper {
         }
         // Module: libclient.so
         pub mod libclient_so {
-            pub const ClientToolsInfo_001: usize = 0x18AD410;
-            pub const EmptyWorldService001_Client: usize = 0x13C6610;
-            pub const GameClientExports001: usize = 0x18ACC90;
-            pub const LegacyGameUI001: usize = 0x1B33030;
-            pub const Source2Client002: usize = 0x18ACD50;
-            pub const Source2ClientConfig001: usize = 0x136E9E0;
-            pub const Source2ClientPrediction001: usize = 0x192E130;
-            pub const Source2ClientUI001: usize = 0x1A7C110;
+            pub const ClientToolsInfo_001: usize = 0x18AD490;
+            pub const EmptyWorldService001_Client: usize = 0x13C6690;
+            pub const GameClientExports001: usize = 0x18ACD10;
+            pub const LegacyGameUI001: usize = 0x1B32E30;
+            pub const Source2Client002: usize = 0x18ACDD0;
+            pub const Source2ClientConfig001: usize = 0x136EA40;
+            pub const Source2ClientPrediction001: usize = 0x192E1B0;
+            pub const Source2ClientUI001: usize = 0x1A7C190;
         }
         // Module: libengine2.so
         pub mod libengine2_so {
@@ -109,7 +109,7 @@ pub mod cs2_dumper {
         }
         // Module: libpanorama.so
         pub mod libpanorama_so {
-            pub const PanoramaUIEngine001: usize = 0x36C3D0;
+            pub const PanoramaUIEngine001: usize = 0x36C5D0;
         }
         // Module: libpanorama_text_pango.so
         pub mod libpanorama_text_pango_so {
@@ -117,7 +117,7 @@ pub mod cs2_dumper {
         }
         // Module: libpanoramauiclient.so
         pub mod libpanoramauiclient_so {
-            pub const PanoramaUIClient001: usize = 0x1A8540;
+            pub const PanoramaUIClient001: usize = 0x1A84B0;
         }
         // Module: libparticles.so
         pub mod libparticles_so {
@@ -153,16 +153,16 @@ pub mod cs2_dumper {
         }
         // Module: libserver.so
         pub mod libserver_so {
-            pub const EmptyWorldService001_Server: usize = 0x13E1600;
-            pub const EntitySubclassUtilsV001: usize = 0xEC0150;
-            pub const NavGameTest001: usize = 0x1C3F7E0;
-            pub const ServerToolsInfo_001: usize = 0x18FD440;
-            pub const Source2GameClients001: usize = 0x18FD430;
+            pub const EmptyWorldService001_Server: usize = 0x13E1800;
+            pub const EntitySubclassUtilsV001: usize = 0xEC02D0;
+            pub const NavGameTest001: usize = 0x1C3F9E0;
+            pub const ServerToolsInfo_001: usize = 0x18FD640;
+            pub const Source2GameClients001: usize = 0x18FD630;
             pub const Source2GameDirector001: usize = 0xAD71F0;
-            pub const Source2GameEntities001: usize = 0x18FD3A0;
-            pub const Source2Server001: usize = 0x18FD150;
-            pub const Source2ServerConfig001: usize = 0x13262F0;
-            pub const customnavsystem001: usize = 0xD1B830;
+            pub const Source2GameEntities001: usize = 0x18FD5A0;
+            pub const Source2Server001: usize = 0x18FD350;
+            pub const Source2ServerConfig001: usize = 0x13264F0;
+            pub const customnavsystem001: usize = 0xD1B9B0;
         }
         // Module: libsoundsystem.so
         pub mod libsoundsystem_so {
