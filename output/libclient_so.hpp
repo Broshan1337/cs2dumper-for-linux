@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-25 09:11:58.966983803 UTC
+// 2026-08-26 21:20:27.991216351 UTC
 
 #pragma once
 
@@ -2307,9 +2307,9 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_strLayout = 0x788; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x790; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
                 constexpr std::ptrdiff_t m_globalLayoutState = 0x7F8; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x908; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x920; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x938; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x900; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x918; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x930; // C_NetworkUtlVectorBase<CUtlString>
             }
             // Parent: None
             // Field count: 3
@@ -4948,10 +4948,10 @@ namespace cs2_dumper {
             // Parent: None
             // Field count: 4
             namespace CCSCustomHudLayoutState {
-                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x30; // bool
+                constexpr std::ptrdiff_t m_playerSlot = 0x30; // CPlayerSlot
+                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x34; // bool
                 constexpr std::ptrdiff_t m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
                 constexpr std::ptrdiff_t m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
-                constexpr std::ptrdiff_t m_playerSlot = 0x108; // CPlayerSlot
             }
             // Parent: C_CSGO_TeamIntroCharacterPosition
             // Field count: 0

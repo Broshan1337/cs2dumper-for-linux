@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-25 09:11:58.966983803 UTC
+// 2026-08-26 21:20:27.991216351 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: libserver.so
@@ -6380,9 +6380,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_strLayout = 0x788; // CUtlSymbolLarge
             public const nint m_vecPlayerLayoutStates = 0x790; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
             public const nint m_globalLayoutState = 0x7F8; // CCSCustomHudLayoutState
-            public const nint m_vecPanelIds = 0x998; // CNetworkUtlVectorBase<CUtlString>
-            public const nint m_vecClassNames = 0x9B0; // CNetworkUtlVectorBase<CUtlString>
-            public const nint m_vecDialogVariableNames = 0x9C8; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecPanelIds = 0x990; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x9A8; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x9C0; // CNetworkUtlVectorBase<CUtlString>
         }
         // Parent: None
         // Field count: 3
@@ -10645,10 +10645,10 @@ namespace CS2Dumper.Schemas {
         // Parent: None
         // Field count: 4
         public static class CCSCustomHudLayoutState {
-            public const nint m_bInputCaptureEnabled = 0x30; // bool
+            public const nint m_playerSlot = 0x30; // CPlayerSlot
+            public const nint m_bInputCaptureEnabled = 0x34; // bool
             public const nint m_vecHasClasses = 0x38; // CNetworkUtlVectorBase<HUDPanelHasClass_t>
             public const nint m_vecDialogVariableStrings = 0x98; // CNetworkUtlVectorBase<HUDPanelDialogVariableString_t>
-            public const nint m_playerSlot = 0x198; // CPlayerSlot
         }
         // Parent: CCSGO_TeamIntroCharacterPosition
         // Field count: 0

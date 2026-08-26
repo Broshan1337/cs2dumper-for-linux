@@ -1,26 +1,26 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-25 09:11:58.966983803 UTC
+// 2026-08-26 21:20:27.991216351 UTC
 
 pub const cs2_dumper = struct {
     pub const offsets = struct {
         // Module: libclient.so
         pub const libclient_so = struct {
-            pub const dwCSGOInput: usize = 0x45996D8;
-            pub const dwEntityList: usize = 0x45D1580;
-            pub const dwGameEntitySystem: usize = 0x4A6AD10;
+            pub const dwCSGOInput: usize = 0x45994B8;
+            pub const dwEntityList: usize = 0x45D1380;
+            pub const dwGameEntitySystem: usize = 0x4A6AB10;
             pub const dwGameEntitySystem_highestEntityIndex: usize = 0x20A0;
-            pub const dwGameRules: usize = 0x48944D4;
-            pub const dwGlobalVars: usize = 0x458E278;
-            pub const dwGlowManager: usize = 0x4821338;
-            pub const dwLocalPlayerController: usize = 0x47F41D8;
-            pub const dwLocalPlayerPawn: usize = 0x48271E8;
-            pub const dwPlantedC4: usize = 0x47E29E0;
-            pub const dwPrediction: usize = 0x48270A0;
-            pub const dwSensitivity: usize = 0x48254D8;
+            pub const dwGameRules: usize = 0x48942D4;
+            pub const dwGlobalVars: usize = 0x458E058;
+            pub const dwGlowManager: usize = 0x4821138;
+            pub const dwLocalPlayerController: usize = 0x47F3FD8;
+            pub const dwLocalPlayerPawn: usize = 0x4826FE8;
+            pub const dwPlantedC4: usize = 0x47E27E0;
+            pub const dwPrediction: usize = 0x4826EA0;
+            pub const dwSensitivity: usize = 0x48252D8;
             pub const dwSensitivity_sensitivity: usize = 0x58;
-            pub const dwViewAngles: usize = 0x4599C20;
-            pub const dwViewMatrix: usize = 0x482E280;
-            pub const dwViewRender: usize = 0x482E390;
+            pub const dwViewAngles: usize = 0x4599A00;
+            pub const dwViewMatrix: usize = 0x482E080;
+            pub const dwViewRender: usize = 0x482E190;
         };
         // Module: libengine2.so
         pub const libengine2_so = struct {
@@ -47,8 +47,8 @@ pub const cs2_dumper = struct {
         };
         // Module: libpanorama.so
         pub const libpanorama_so = struct {
-            pub const HUD_CONTEXT: usize = 0x67CA40;
-            pub const MENU_CONTEXT: usize = 0x67CA20;
+            pub const HUD_CONTEXT: usize = 0x67CCE0;
+            pub const MENU_CONTEXT: usize = 0x67CCC0;
         };
     };
 };
