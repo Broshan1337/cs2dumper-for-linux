@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-25 09:11:58.966983803 UTC
+// 2026-08-26 21:20:27.991216351 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: libanimationsystem.so
@@ -9,14 +9,14 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint ClientToolsInfo_001 = 0x18AD410;
-        public const nint EmptyWorldService001_Client = 0x13C6610;
-        public const nint GameClientExports001 = 0x18ACC90;
-        public const nint LegacyGameUI001 = 0x1B33030;
-        public const nint Source2Client002 = 0x18ACD50;
-        public const nint Source2ClientConfig001 = 0x136E9E0;
-        public const nint Source2ClientPrediction001 = 0x192E130;
-        public const nint Source2ClientUI001 = 0x1A7C110;
+        public const nint ClientToolsInfo_001 = 0x18AD490;
+        public const nint EmptyWorldService001_Client = 0x13C6690;
+        public const nint GameClientExports001 = 0x18ACD10;
+        public const nint LegacyGameUI001 = 0x1B32E30;
+        public const nint Source2Client002 = 0x18ACDD0;
+        public const nint Source2ClientConfig001 = 0x136EA40;
+        public const nint Source2ClientPrediction001 = 0x192E1B0;
+        public const nint Source2ClientUI001 = 0x1A7C190;
     }
     // Module: libengine2.so
     public static class Libengine2So {
@@ -106,7 +106,7 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libpanorama.so
     public static class LibpanoramaSo {
-        public const nint PanoramaUIEngine001 = 0x36C3D0;
+        public const nint PanoramaUIEngine001 = 0x36C5D0;
     }
     // Module: libpanorama_text_pango.so
     public static class LibpanoramaTextPangoSo {
@@ -114,7 +114,7 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libpanoramauiclient.so
     public static class LibpanoramauiclientSo {
-        public const nint PanoramaUIClient001 = 0x1A8540;
+        public const nint PanoramaUIClient001 = 0x1A84B0;
     }
     // Module: libparticles.so
     public static class LibparticlesSo {
@@ -150,16 +150,16 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libserver.so
     public static class LibserverSo {
-        public const nint EmptyWorldService001_Server = 0x13E1600;
-        public const nint EntitySubclassUtilsV001 = 0xEC0150;
-        public const nint NavGameTest001 = 0x1C3F7E0;
-        public const nint ServerToolsInfo_001 = 0x18FD440;
-        public const nint Source2GameClients001 = 0x18FD430;
+        public const nint EmptyWorldService001_Server = 0x13E1800;
+        public const nint EntitySubclassUtilsV001 = 0xEC02D0;
+        public const nint NavGameTest001 = 0x1C3F9E0;
+        public const nint ServerToolsInfo_001 = 0x18FD640;
+        public const nint Source2GameClients001 = 0x18FD630;
         public const nint Source2GameDirector001 = 0xAD71F0;
-        public const nint Source2GameEntities001 = 0x18FD3A0;
-        public const nint Source2Server001 = 0x18FD150;
-        public const nint Source2ServerConfig001 = 0x13262F0;
-        public const nint customnavsystem001 = 0xD1B830;
+        public const nint Source2GameEntities001 = 0x18FD5A0;
+        public const nint Source2Server001 = 0x18FD350;
+        public const nint Source2ServerConfig001 = 0x13264F0;
+        public const nint customnavsystem001 = 0xD1B9B0;
     }
     // Module: libsoundsystem.so
     public static class LibsoundsystemSo {

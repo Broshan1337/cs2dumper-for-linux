@@ -4,14 +4,14 @@
     "AnimationSystem_001": 3831024
   },
   "libclient.so": {
-    "ClientToolsInfo_001": 25875472,
-    "EmptyWorldService001_Client": 20735504,
-    "GameClientExports001": 25873552,
-    "LegacyGameUI001": 28520496,
-    "Source2Client002": 25873744,
-    "Source2ClientConfig001": 20376032,
-    "Source2ClientPrediction001": 26403120,
-    "Source2ClientUI001": 27771152
+    "ClientToolsInfo_001": 25875600,
+    "EmptyWorldService001_Client": 20735632,
+    "GameClientExports001": 25873680,
+    "LegacyGameUI001": 28519984,
+    "Source2Client002": 25873872,
+    "Source2ClientConfig001": 20376128,
+    "Source2ClientPrediction001": 26403248,
+    "Source2ClientUI001": 27771280
   },
   "libengine2.so": {
     "BenchmarkService001": 3943408,
@@ -91,13 +91,13 @@
     "SerializedEntitiesVersion001": 3034208
   },
   "libpanorama.so": {
-    "PanoramaUIEngine001": 3589072
+    "PanoramaUIEngine001": 3589584
   },
   "libpanorama_text_pango.so": {
     "PanoramaTextServices001": 1534208
   },
   "libpanoramauiclient.so": {
-    "PanoramaUIClient001": 1738048
+    "PanoramaUIClient001": 1737904
   },
   "libparticles.so": {
     "ParticleSystemMgr003": 2863424
@@ -125,16 +125,16 @@
     "SchemaSystem_001": 238512
   },
   "libserver.so": {
-    "EmptyWorldService001_Server": 20846080,
-    "EntitySubclassUtilsV001": 15466832,
-    "NavGameTest001": 29620192,
-    "ServerToolsInfo_001": 26203200,
-    "Source2GameClients001": 26203184,
+    "EmptyWorldService001_Server": 20846592,
+    "EntitySubclassUtilsV001": 15467216,
+    "NavGameTest001": 29620704,
+    "ServerToolsInfo_001": 26203712,
+    "Source2GameClients001": 26203696,
     "Source2GameDirector001": 11366896,
-    "Source2GameEntities001": 26203040,
-    "Source2Server001": 26202448,
-    "Source2ServerConfig001": 20079344,
-    "customnavsystem001": 13744176
+    "Source2GameEntities001": 26203552,
+    "Source2Server001": 26202960,
+    "Source2ServerConfig001": 20079856,
+    "customnavsystem001": 13744560
   },
   "libsoundsystem.so": {
     "SoundBugBugService001_Client": 4379552,

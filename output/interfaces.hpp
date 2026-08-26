@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-25 09:11:58.966983803 UTC
+// 2026-08-26 21:20:27.991216351 UTC
 
 #pragma once
 
@@ -15,14 +15,14 @@ namespace cs2_dumper {
         }
         // Module: libclient.so
         namespace libclient_so {
-            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x18AD410;
-            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x13C6610;
-            constexpr std::ptrdiff_t GameClientExports001 = 0x18ACC90;
-            constexpr std::ptrdiff_t LegacyGameUI001 = 0x1B33030;
-            constexpr std::ptrdiff_t Source2Client002 = 0x18ACD50;
-            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x136E9E0;
-            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x192E130;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x1A7C110;
+            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x18AD490;
+            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x13C6690;
+            constexpr std::ptrdiff_t GameClientExports001 = 0x18ACD10;
+            constexpr std::ptrdiff_t LegacyGameUI001 = 0x1B32E30;
+            constexpr std::ptrdiff_t Source2Client002 = 0x18ACDD0;
+            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x136EA40;
+            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x192E1B0;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x1A7C190;
         }
         // Module: libengine2.so
         namespace libengine2_so {
@@ -112,7 +112,7 @@ namespace cs2_dumper {
         }
         // Module: libpanorama.so
         namespace libpanorama_so {
-            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x36C3D0;
+            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x36C5D0;
         }
         // Module: libpanorama_text_pango.so
         namespace libpanorama_text_pango_so {
@@ -120,7 +120,7 @@ namespace cs2_dumper {
         }
         // Module: libpanoramauiclient.so
         namespace libpanoramauiclient_so {
-            constexpr std::ptrdiff_t PanoramaUIClient001 = 0x1A8540;
+            constexpr std::ptrdiff_t PanoramaUIClient001 = 0x1A84B0;
         }
         // Module: libparticles.so
         namespace libparticles_so {
@@ -156,16 +156,16 @@ namespace cs2_dumper {
         }
         // Module: libserver.so
         namespace libserver_so {
-            constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x13E1600;
-            constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0xEC0150;
-            constexpr std::ptrdiff_t NavGameTest001 = 0x1C3F7E0;
-            constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x18FD440;
-            constexpr std::ptrdiff_t Source2GameClients001 = 0x18FD430;
+            constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x13E1800;
+            constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0xEC02D0;
+            constexpr std::ptrdiff_t NavGameTest001 = 0x1C3F9E0;
+            constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x18FD640;
+            constexpr std::ptrdiff_t Source2GameClients001 = 0x18FD630;
             constexpr std::ptrdiff_t Source2GameDirector001 = 0xAD71F0;
-            constexpr std::ptrdiff_t Source2GameEntities001 = 0x18FD3A0;
-            constexpr std::ptrdiff_t Source2Server001 = 0x18FD150;
-            constexpr std::ptrdiff_t Source2ServerConfig001 = 0x13262F0;
-            constexpr std::ptrdiff_t customnavsystem001 = 0xD1B830;
+            constexpr std::ptrdiff_t Source2GameEntities001 = 0x18FD5A0;
+            constexpr std::ptrdiff_t Source2Server001 = 0x18FD350;
+            constexpr std::ptrdiff_t Source2ServerConfig001 = 0x13264F0;
+            constexpr std::ptrdiff_t customnavsystem001 = 0xD1B9B0;
         }
         // Module: libsoundsystem.so
         namespace libsoundsystem_so {
