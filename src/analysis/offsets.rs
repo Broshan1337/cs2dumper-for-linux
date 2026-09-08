@@ -16,7 +16,14 @@ pub fn offsets<P: Process + MemoryView>(process: &mut P) -> Result<OffsetMap> {
     let mut map = BTreeMap::new();
 
     for (module_name, sigs) in CONFIG.signatures.iter().flatten() {
-        let module = process.module_by_name(module_name)?;
+        let module = match process.module_by_name(module_name) {
+            Ok(module) => module,
+            Err(err) => {
+                error!("skipping signatures for {}: {}", module_name, err);
+
+                continue;
+            }
+        };
 
         let mut offsets = BTreeMap::new();
 

@@ -9,7 +9,8 @@ actively maintained ("this branch will likely not be kept up-to-date by myself. 
 welcome!"), and it had fallen a long way behind `main`. This fork brings it back up to date: it builds
 on current Rust, matches `main`'s output format, and dumps cleanly against the current CS2 build.
 
-**Status:** verified against CS2 build `14178` (PatchVersion 1.41.7.8)
+**Status:** verified against CS2 build `14180` (PatchVersion 1.41.8.0) — 16 buttons, 129 interfaces
+across 30 modules, 32 offsets across 5 modules, and 3340 classes / 550 enums across 18 modules.
 
 ## What was updated
 

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-26 21:20:27.991216351 UTC
+// 2026-09-08 10:41:43.828498822 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -15,7 +15,7 @@ pub mod cs2_dumper {
             pub const ClientToolsInfo_001: usize = 0x18AD490;
             pub const EmptyWorldService001_Client: usize = 0x13C6690;
             pub const GameClientExports001: usize = 0x18ACD10;
-            pub const LegacyGameUI001: usize = 0x1B32E30;
+            pub const LegacyGameUI001: usize = 0x1B32E70;
             pub const Source2Client002: usize = 0x18ACDD0;
             pub const Source2ClientConfig001: usize = 0x136EA40;
             pub const Source2ClientPrediction001: usize = 0x192E1B0;
@@ -28,7 +28,7 @@ pub mod cs2_dumper {
             pub const BugService001: usize = 0x3BD450;
             pub const ClientServerEngineLoopService_001: usize = 0x3788D0;
             pub const ClientServerSharedHandleSystem001: usize = 0x340180;
-            pub const EngineGameUI001: usize = 0x5D6C60;
+            pub const EngineGameUI001: usize = 0x5D6CE0;
             pub const EngineServiceMgr001: usize = 0x3644D0;
             pub const GameEventSystemClientV001: usize = 0x36ABF0;
             pub const GameEventSystemServerV001: usize = 0x36AC00;
@@ -36,7 +36,7 @@ pub mod cs2_dumper {
             pub const GameResourceServiceServerV001: usize = 0x3C4D40;
             pub const GameUIService_001: usize = 0x3CF9E0;
             pub const HostStateMgr001: usize = 0x371B10;
-            pub const INETSUPPORT_001: usize = 0x58B100;
+            pub const INETSUPPORT_001: usize = 0x58B180;
             pub const InputService_001: usize = 0x3D51B0;
             pub const KeyValueCache001: usize = 0x375190;
             pub const MapListService_001: usize = 0x3F2160;
@@ -55,7 +55,7 @@ pub mod cs2_dumper {
             pub const SplitScreenService_001: usize = 0x445230;
             pub const StatsService_001: usize = 0x449790;
             pub const ToolService_001: usize = 0x44F060;
-            pub const VENGINE_GAMEUIFUNCS_VERSION005: usize = 0x5D64E0;
+            pub const VENGINE_GAMEUIFUNCS_VERSION005: usize = 0x5D6560;
             pub const VProfService_001: usize = 0x450A70;
         }
         // Module: libfilesystem_stdio.so
@@ -153,15 +153,15 @@ pub mod cs2_dumper {
         }
         // Module: libserver.so
         pub mod libserver_so {
-            pub const EmptyWorldService001_Server: usize = 0x13E1800;
+            pub const EmptyWorldService001_Server: usize = 0x13E1340;
             pub const EntitySubclassUtilsV001: usize = 0xEC02D0;
-            pub const NavGameTest001: usize = 0x1C3F9E0;
-            pub const ServerToolsInfo_001: usize = 0x18FD640;
-            pub const Source2GameClients001: usize = 0x18FD630;
+            pub const NavGameTest001: usize = 0x1C3F520;
+            pub const ServerToolsInfo_001: usize = 0x18FD180;
+            pub const Source2GameClients001: usize = 0x18FD170;
             pub const Source2GameDirector001: usize = 0xAD71F0;
-            pub const Source2GameEntities001: usize = 0x18FD5A0;
-            pub const Source2Server001: usize = 0x18FD350;
-            pub const Source2ServerConfig001: usize = 0x13264F0;
+            pub const Source2GameEntities001: usize = 0x18FD0E0;
+            pub const Source2Server001: usize = 0x18FCE90;
+            pub const Source2ServerConfig001: usize = 0x1326030;
             pub const customnavsystem001: usize = 0xD1B9B0;
         }
         // Module: libsoundsystem.so
@@ -178,10 +178,10 @@ pub mod cs2_dumper {
         }
         // Module: libtier0.so
         pub mod libtier0_so {
-            pub const TestScriptMgr001: usize = 0x2469D0;
+            pub const TestScriptMgr001: usize = 0x246A10;
             pub const VEngineCvar007: usize = 0x154160;
-            pub const VProcessUtils002: usize = 0x235D70;
-            pub const VStringTokenSystem001: usize = 0x273F90;
+            pub const VProcessUtils002: usize = 0x235DB0;
+            pub const VStringTokenSystem001: usize = 0x273FD0;
         }
         // Module: libv8system.so
         pub mod libv8system_so {
@@ -201,28 +201,28 @@ pub mod cs2_dumper {
         }
         // Module: steamclient.so
         pub mod steamclient_so {
-            pub const CLIENTENGINE_INTERFACE_VERSION005: usize = 0x15B3BC0;
-            pub const IVALIDATE001: usize = 0x15AF8E0;
-            pub const SteamClient006: usize = 0x123AF50;
-            pub const SteamClient007: usize = 0x123AF60;
-            pub const SteamClient008: usize = 0x123AF70;
-            pub const SteamClient009: usize = 0x123AF80;
-            pub const SteamClient010: usize = 0x123AF90;
-            pub const SteamClient011: usize = 0x123AFA0;
-            pub const SteamClient012: usize = 0x123AFB0;
-            pub const SteamClient013: usize = 0x123AFC0;
-            pub const SteamClient014: usize = 0x123AFD0;
-            pub const SteamClient015: usize = 0x123AFE0;
-            pub const SteamClient016: usize = 0x123AFF0;
-            pub const SteamClient017: usize = 0x123B000;
-            pub const SteamClient018: usize = 0x123B010;
-            pub const SteamClient019: usize = 0x123B020;
-            pub const SteamClient020: usize = 0x123B030;
-            pub const SteamClient021: usize = 0x123B040;
-            pub const SteamClient022: usize = 0x123B050;
-            pub const SteamClient023: usize = 0x123B060;
-            pub const p2pvoice002: usize = 0x1E64380;
-            pub const p2pvoicesingleton002: usize = 0x1E5CB50;
+            pub const CLIENTENGINE_INTERFACE_VERSION005: usize = 0x15B62A0;
+            pub const IVALIDATE001: usize = 0x15B1FC0;
+            pub const SteamClient006: usize = 0x123D5D0;
+            pub const SteamClient007: usize = 0x123D5E0;
+            pub const SteamClient008: usize = 0x123D5F0;
+            pub const SteamClient009: usize = 0x123D600;
+            pub const SteamClient010: usize = 0x123D610;
+            pub const SteamClient011: usize = 0x123D620;
+            pub const SteamClient012: usize = 0x123D630;
+            pub const SteamClient013: usize = 0x123D640;
+            pub const SteamClient014: usize = 0x123D650;
+            pub const SteamClient015: usize = 0x123D660;
+            pub const SteamClient016: usize = 0x123D670;
+            pub const SteamClient017: usize = 0x123D680;
+            pub const SteamClient018: usize = 0x123D690;
+            pub const SteamClient019: usize = 0x123D6A0;
+            pub const SteamClient020: usize = 0x123D6B0;
+            pub const SteamClient021: usize = 0x123D6C0;
+            pub const SteamClient022: usize = 0x123D6D0;
+            pub const SteamClient023: usize = 0x123D6E0;
+            pub const p2pvoice002: usize = 0x1E6A790;
+            pub const p2pvoicesingleton002: usize = 0x1E62F60;
         }
     }
 }

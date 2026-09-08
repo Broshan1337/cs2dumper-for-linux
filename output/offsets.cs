@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-26 21:20:27.991216351 UTC
+// 2026-09-08 10:41:43.828498822 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: libclient.so
@@ -23,8 +23,8 @@ namespace CS2Dumper.Offsets {
     }
     // Module: libengine2.so
     public static class Libengine2So {
-        public const nint dwBuildNumber = 0x9D9874;
-        public const nint dwNetworkGameClient = 0xA2AC80;
+        public const nint dwBuildNumber = 0x9D98F4;
+        public const nint dwNetworkGameClient = 0xA2AD00;
         public const nint dwNetworkGameClient_clientTickCount = 0x388;
         public const nint dwNetworkGameClient_deltaTick = 0x38C;
         public const nint dwNetworkGameClient_isBackgroundMap = 0x288;
@@ -32,8 +32,8 @@ namespace CS2Dumper.Offsets {
         public const nint dwNetworkGameClient_maxClients = 0x240;
         public const nint dwNetworkGameClient_serverTickCount = 0x25C;
         public const nint dwNetworkGameClient_signOnState = 0x284;
-        public const nint dwWindowHeight = 0x9E45E4;
-        public const nint dwWindowWidth = 0x9E45E0;
+        public const nint dwWindowHeight = 0x9E4664;
+        public const nint dwWindowWidth = 0x9E4660;
     }
     // Module: libinputsystem.so
     public static class LibinputsystemSo {
