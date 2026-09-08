@@ -18,8 +18,8 @@
     "dwViewRender": 75686288
   },
   "libengine2.so": {
-    "dwBuildNumber": 10328180,
-    "dwNetworkGameClient": 10660992,
+    "dwBuildNumber": 10328308,
+    "dwNetworkGameClient": 10661120,
     "dwNetworkGameClient_clientTickCount": 904,
     "dwNetworkGameClient_deltaTick": 908,
     "dwNetworkGameClient_isBackgroundMap": 648,
@@ -27,8 +27,8 @@
     "dwNetworkGameClient_maxClients": 576,
     "dwNetworkGameClient_serverTickCount": 604,
     "dwNetworkGameClient_signOnState": 644,
-    "dwWindowHeight": 10372580,
-    "dwWindowWidth": 10372576
+    "dwWindowHeight": 10372708,
+    "dwWindowWidth": 10372704
   },
   "libinputsystem.so": {
     "dwInputSystem": 523200

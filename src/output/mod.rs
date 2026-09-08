@@ -8,6 +8,8 @@ use chrono::{DateTime, Utc};
 
 use memflow::prelude::v1::*;
 
+use log::warn;
+
 use serde_json::json;
 
 use formatter::Formatter;
@@ -150,8 +152,20 @@ impl<'a> Output<'a> {
                 let offset = offsets.iter().find(|(name, _)| *name == "dwBuildNumber")?.1;
 
                 process.read::<u32>(module.base + *offset).data_part().ok()
-            })
-            .ok_or(anyhow!("failed to read build number"))?;
+            });
+
+        let Some(build_number) = build_number else {
+            warn!("failed to read build number, writing info.json without it");
+
+            let content = serde_json::to_string_pretty(&json!({
+                "timestamp": self.timestamp.to_rfc3339(),
+                "build_number": Option::<u32>::None,
+            }))?;
+
+            fs::write(&file_path, &content)?;
+
+            return Ok(());
+        };
 
         let content = serde_json::to_string_pretty(&json!({
             "timestamp": self.timestamp.to_rfc3339(),

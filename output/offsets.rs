@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-26 21:20:27.991216351 UTC
+// 2026-09-08 10:41:43.828498822 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -26,8 +26,8 @@ pub mod cs2_dumper {
         }
         // Module: libengine2.so
         pub mod libengine2_so {
-            pub const dwBuildNumber: usize = 0x9D9874;
-            pub const dwNetworkGameClient: usize = 0xA2AC80;
+            pub const dwBuildNumber: usize = 0x9D98F4;
+            pub const dwNetworkGameClient: usize = 0xA2AD00;
             pub const dwNetworkGameClient_clientTickCount: usize = 0x388;
             pub const dwNetworkGameClient_deltaTick: usize = 0x38C;
             pub const dwNetworkGameClient_isBackgroundMap: usize = 0x288;
@@ -35,8 +35,8 @@ pub mod cs2_dumper {
             pub const dwNetworkGameClient_maxClients: usize = 0x240;
             pub const dwNetworkGameClient_serverTickCount: usize = 0x25C;
             pub const dwNetworkGameClient_signOnState: usize = 0x284;
-            pub const dwWindowHeight: usize = 0x9E45E4;
-            pub const dwWindowWidth: usize = 0x9E45E0;
+            pub const dwWindowHeight: usize = 0x9E4664;
+            pub const dwWindowWidth: usize = 0x9E4660;
         }
         // Module: libinputsystem.so
         pub mod libinputsystem_so {
