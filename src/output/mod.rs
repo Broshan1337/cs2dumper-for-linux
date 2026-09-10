@@ -14,7 +14,7 @@ use serde_json::json;
 
 use formatter::Formatter;
 
-use crate::analysis::*;
+use crate::analysis::{self, *};
 
 mod buttons;
 mod formatter;
@@ -148,7 +148,7 @@ impl<'a> Output<'a> {
             .offsets
             .iter()
             .find_map(|(module_name, offsets)| {
-                let module = process.module_by_name(module_name).ok()?;
+                let module = analysis::module_by_name_retry(process, module_name).ok()?;
                 let offset = offsets.iter().find(|(name, _)| *name == "dwBuildNumber")?.1;
 
                 process.read::<u32>(module.base + *offset).data_part().ok()

@@ -272,7 +272,7 @@ fn read_enum_binding_members(
 }
 
 fn read_schema_system<P: Process + MemoryView>(process: &mut P) -> Result<SchemaSystem> {
-    let module = process.module_by_name("libschemasystem.so")?;
+    let module = super::module_by_name_retry(process, "libschemasystem.so")?;
 
     let buf = process
         .read_raw(module.base, module.size as _)

@@ -44,21 +44,23 @@ pub fn interface_list_head<P: Process + MemoryView>(
 }
 
 pub fn interfaces<P: Process + MemoryView>(process: &mut P) -> Result<InterfaceMap> {
-    process
-        .module_list()?
+    super::module_list_retry(process)?
         .iter()
         .filter_map(|module| {
-            let buf = process
-                .read_raw(module.base, module.size as _)
-                .data_part()
-                .ok()?;
+            let ifaces = (0..3).find_map(|_| {
+                let buf = process
+                    .read_raw(module.base, module.size as _)
+                    .data_part()
+                    .ok()?;
 
-            let list_head = interface_list_head(process, module, &buf).ok()?;
+                let list_head = interface_list_head(process, module, &buf).ok()?;
 
-            read_interfaces(process, module, list_head)
-                .ok()
-                .filter(|ifaces| !ifaces.is_empty())
-                .map(|ifaces| Ok((module.name.to_string(), ifaces)))
+                read_interfaces(process, module, list_head)
+                    .ok()
+                    .filter(|ifaces| !ifaces.is_empty())
+            })?;
+
+            Some(Ok((module.name.to_string(), ifaces)))
         })
         .collect()
 }
