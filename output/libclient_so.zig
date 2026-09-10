@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-08 10:41:43.828498822 UTC
+// 2026-09-10 13:49:10.424194871 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: libclient.so
-        // Class count: 567
+        // Class count: 568
         // Enum count: 14
         pub const libclient_so = struct {
             // Alignment: 4
@@ -2297,14 +2297,15 @@ pub const cs2_dumper = struct {
             pub const C_Item_Healthshot = struct {
             };
             // Parent: C_BaseEntity
-            // Field count: 6
+            // Field count: 7
             pub const CCSCustomHudLayout = struct {
-                pub const m_strLayout: usize = 0x788; // CUtlSymbolLarge
-                pub const m_vecPlayerLayoutStates: usize = 0x790; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-                pub const m_globalLayoutState: usize = 0x7F8; // CCSCustomHudLayoutState
-                pub const m_vecPanelIds: usize = 0x900; // C_NetworkUtlVectorBase<CUtlString>
-                pub const m_vecClassNames: usize = 0x918; // C_NetworkUtlVectorBase<CUtlString>
-                pub const m_vecDialogVariableNames: usize = 0x930; // C_NetworkUtlVectorBase<CUtlString>
+                pub const m_strLayout: usize = 0x798; // CUtlSymbolLarge
+                pub const m_bObservable: usize = 0x7A0; // bool
+                pub const m_vecPlayerLayoutStates: usize = 0x7A8; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                pub const m_globalLayoutState: usize = 0x810; // CCSCustomHudLayoutState
+                pub const m_vecPanelIds: usize = 0x918; // C_NetworkUtlVectorBase<CUtlString>
+                pub const m_vecClassNames: usize = 0x930; // C_NetworkUtlVectorBase<CUtlString>
+                pub const m_vecDialogVariableNames: usize = 0x948; // C_NetworkUtlVectorBase<CUtlString>
             };
             // Parent: None
             // Field count: 3
@@ -3618,6 +3619,18 @@ pub const cs2_dumper = struct {
             // Parent: None
             // Field count: 0
             pub const C_SoundOpvarSetOBBEntity = struct {
+            };
+            // Parent: None
+            // Field count: 8
+            pub const CCSCustomPlayerCamera = struct {
+                pub const m_hPawn: usize = 0x77C; // CHandle<C_CSPlayerPawnBase>
+                pub const m_nCameraMode: usize = 0x780; // CustomCameraMode_t
+                pub const m_hFollowEntity: usize = 0x784; // CHandle<C_BaseEntity>
+                pub const m_bFollowEyes: usize = 0x788; // bool
+                pub const m_vecFollowOffset: usize = 0x78C; // Vector
+                pub const m_vecCameraOffset: usize = 0x798; // Vector
+                pub const m_bClipCameraOffset: usize = 0x7A4; // bool
+                pub const m_flCameraOffsetReturnStrength: usize = 0x7A8; // float32
             };
             // Parent: None
             // Field count: 1
@@ -5120,11 +5133,8 @@ pub const cs2_dumper = struct {
             pub const C_TriggerVolume = struct {
             };
             // Parent: None
-            // Field count: 3
+            // Field count: 0
             pub const CCSPlayerCamera = struct {
-                pub const m_hPawn: usize = 0x77C; // CHandle<C_CSPlayerPawnBase>
-                pub const m_bEnabled: usize = 0x780; // bool
-                pub const m_bIsControllingAngles: usize = 0x781; // bool
             };
             // Parent: None
             // Field count: 1

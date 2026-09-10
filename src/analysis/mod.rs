@@ -4,10 +4,12 @@ pub use offsets::*;
 pub use schemas::*;
 
 use std::any::type_name;
+use std::thread;
+use std::time::Duration;
 
-use anyhow::Result;
+use anyhow::{Result, anyhow};
 
-use log::{error, info};
+use log::{error, info, warn};
 
 use memflow::prelude::v1::*;
 
@@ -15,6 +17,53 @@ mod buttons;
 mod interfaces;
 mod offsets;
 mod schemas;
+
+/// Number of attempts made when looking up a module.
+///
+/// memflow-native re-reads `/proc/<pid>/maps` for every entry of the module
+/// list. The game changes its memory map constantly (transient mmaps, worker
+/// thread stacks), so a lookup can transiently fail with `module not found`
+/// when the map list shifts between two reads. Retrying makes the pass
+/// deterministic.
+const MODULE_LOOKUP_ATTEMPTS: usize = 8;
+
+const MODULE_LOOKUP_DELAY: Duration = Duration::from_millis(50);
+
+pub fn module_by_name_retry<P: Process + MemoryView>(
+    process: &mut P,
+    name: &str,
+) -> Result<ModuleInfo> {
+    let mut last_err = None;
+
+    for _ in 0..MODULE_LOOKUP_ATTEMPTS {
+        match process.module_by_name(name) {
+            Ok(module) => return Ok(module),
+            Err(err) => {
+                last_err = Some(err);
+
+                thread::sleep(MODULE_LOOKUP_DELAY);
+            }
+        }
+    }
+
+    Err(last_err.unwrap().into())
+}
+
+pub fn module_list_retry<P: Process + MemoryView>(process: &mut P) -> Result<Vec<ModuleInfo>> {
+    let mut last_err = None;
+
+    for _ in 0..MODULE_LOOKUP_ATTEMPTS {
+        match process.module_list() {
+            Ok(modules) if !modules.is_empty() => return Ok(modules),
+            Err(err) => last_err = Some(err),
+            Ok(_) => last_err = None,
+        }
+
+        thread::sleep(MODULE_LOOKUP_DELAY);
+    }
+
+    Err(last_err.map(Into::into).unwrap_or_else(|| anyhow!("module list is empty")))
+}
 
 #[derive(Debug)]
 pub struct AnalysisResult {

@@ -4,7 +4,7 @@ use std::str::FromStr;
 
 use anyhow::{Result, anyhow};
 
-use log::{debug, error};
+use log::{debug, error, warn};
 
 use memflow::prelude::v1::*;
 
@@ -16,10 +16,10 @@ pub fn offsets<P: Process + MemoryView>(process: &mut P) -> Result<OffsetMap> {
     let mut map = BTreeMap::new();
 
     for (module_name, sigs) in CONFIG.signatures.iter().flatten() {
-        let module = match process.module_by_name(module_name) {
+        let module = match super::module_by_name_retry(process, module_name) {
             Ok(module) => module,
             Err(err) => {
-                error!("skipping signatures for {}: {}", module_name, err);
+                warn!("skipping signatures for {}: {}", module_name, err);
 
                 continue;
             }

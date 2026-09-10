@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-08 10:41:43.828498822 UTC
+// 2026-09-10 13:49:10.424194871 UTC
 
 #pragma once
 
@@ -9,7 +9,7 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: libclient.so
-        // Class count: 567
+        // Class count: 568
         // Enum count: 14
         namespace libclient_so {
             // Alignment: 4
@@ -2302,14 +2302,15 @@ namespace cs2_dumper {
             namespace C_Item_Healthshot {
             }
             // Parent: C_BaseEntity
-            // Field count: 6
+            // Field count: 7
             namespace CCSCustomHudLayout {
-                constexpr std::ptrdiff_t m_strLayout = 0x788; // CUtlSymbolLarge
-                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x790; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-                constexpr std::ptrdiff_t m_globalLayoutState = 0x7F8; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x900; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x918; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x930; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_strLayout = 0x798; // CUtlSymbolLarge
+                constexpr std::ptrdiff_t m_bObservable = 0x7A0; // bool
+                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x7A8; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                constexpr std::ptrdiff_t m_globalLayoutState = 0x810; // CCSCustomHudLayoutState
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x918; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x930; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x948; // C_NetworkUtlVectorBase<CUtlString>
             }
             // Parent: None
             // Field count: 3
@@ -3623,6 +3624,18 @@ namespace cs2_dumper {
             // Parent: None
             // Field count: 0
             namespace C_SoundOpvarSetOBBEntity {
+            }
+            // Parent: None
+            // Field count: 8
+            namespace CCSCustomPlayerCamera {
+                constexpr std::ptrdiff_t m_hPawn = 0x77C; // CHandle<C_CSPlayerPawnBase>
+                constexpr std::ptrdiff_t m_nCameraMode = 0x780; // CustomCameraMode_t
+                constexpr std::ptrdiff_t m_hFollowEntity = 0x784; // CHandle<C_BaseEntity>
+                constexpr std::ptrdiff_t m_bFollowEyes = 0x788; // bool
+                constexpr std::ptrdiff_t m_vecFollowOffset = 0x78C; // Vector
+                constexpr std::ptrdiff_t m_vecCameraOffset = 0x798; // Vector
+                constexpr std::ptrdiff_t m_bClipCameraOffset = 0x7A4; // bool
+                constexpr std::ptrdiff_t m_flCameraOffsetReturnStrength = 0x7A8; // float32
             }
             // Parent: None
             // Field count: 1
@@ -5125,11 +5138,8 @@ namespace cs2_dumper {
             namespace C_TriggerVolume {
             }
             // Parent: None
-            // Field count: 3
+            // Field count: 0
             namespace CCSPlayerCamera {
-                constexpr std::ptrdiff_t m_hPawn = 0x77C; // CHandle<C_CSPlayerPawnBase>
-                constexpr std::ptrdiff_t m_bEnabled = 0x780; // bool
-                constexpr std::ptrdiff_t m_bIsControllingAngles = 0x781; // bool
             }
             // Parent: None
             // Field count: 1

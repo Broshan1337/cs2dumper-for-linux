@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-08 10:41:43.828498822 UTC
+// 2026-09-10 13:49:10.424194871 UTC
 
 #pragma once
 
@@ -9,8 +9,8 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: libserver.so
-        // Class count: 996
-        // Enum count: 238
+        // Class count: 997
+        // Enum count: 239
         namespace libserver_so {
             // Alignment: 4
             // Member count: 4
@@ -154,6 +154,14 @@ namespace cs2_dumper {
                 TIMELINE_COMPRESSION_AVERAGE = 0x2,
                 TIMELINE_COMPRESSION_AVERAGE_BLEND = 0x3,
                 TIMELINE_COMPRESSION_TOTAL = 0x4
+            };
+            // Alignment: 1
+            // Member count: 4
+            enum class CustomCameraMode_t : uint8_t {
+                CUSTOM_CAMERA_MODE_DISABLED = 0x0,
+                CUSTOM_CAMERA_MODE_CONTROLLED = 0x1,
+                CUSTOM_CAMERA_MODE_CONTROLLED_POSITION = 0x2,
+                CUSTOM_CAMERA_MODE_FOLLOW_POSITION = 0x3
             };
             // Alignment: 4
             // Member count: 3
@@ -582,7 +590,7 @@ namespace cs2_dumper {
                 Sidekick = 0x6
             };
             // Alignment: 4
-            // Member count: 31
+            // Member count: 32
             enum class SVC_Messages : uint32_t {
                 svc_ServerInfo = 0x28,
                 svc_FlattenedSerializer = 0x29,
@@ -614,7 +622,8 @@ namespace cs2_dumper {
                 svc_Broadcast_Command = 0x4A,
                 svc_HltvFixupOperatorStatus = 0x4B,
                 svc_UserCmds = 0x4C,
-                svc_NextMsgPredicted = 0x4D
+                svc_NextMsgPredicted = 0x4D,
+                svc_EncryptedData = 0x4E
             };
             // Alignment: 4
             // Member count: 2
@@ -2149,9 +2158,9 @@ namespace cs2_dumper {
                 CS_UM_Geiger = 0x12E,
                 CS_UM_Train = 0x12F,
                 CS_UM_HudText = 0x130,
-                CS_UM_SayText = 0x131,
-                CS_UM_SayText2 = 0x132,
-                CS_UM_TextMsg = 0x133,
+                CS_UM_SayText_CSGOLegacy = 0x131,
+                CS_UM_SayText2_CSGOLegacy = 0x132,
+                CS_UM_TextMsg_CSGOLegacy = 0x133,
                 CS_UM_HudMsg = 0x134,
                 CS_UM_ResetHud = 0x135,
                 CS_UM_GameTitle = 0x136,
@@ -2171,7 +2180,7 @@ namespace cs2_dumper {
                 CS_UM_ProcessSpottedEntityUpdate = 0x145,
                 CS_UM_ReloadEffect = 0x146,
                 CS_UM_AdjustMoney = 0x147,
-                CS_UM_UpdateTeamMoney = 0x148,
+                CS_UM_UpdateTeamMoney_CSGOLegacy = 0x148,
                 CS_UM_StopSpectatorMode = 0x149,
                 CS_UM_KillCam = 0x14A,
                 CS_UM_DesiredTimescale = 0x14B,
@@ -6381,14 +6390,15 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_iMaxObjectsAttached = 0xCA8; // int32
             }
             // Parent: CBaseEntity
-            // Field count: 6
+            // Field count: 7
             namespace CCSCustomHudLayout {
                 constexpr std::ptrdiff_t m_strLayout = 0x788; // CUtlSymbolLarge
-                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x790; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-                constexpr std::ptrdiff_t m_globalLayoutState = 0x7F8; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x990; // CNetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x9A8; // CNetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x9C0; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_bObservable = 0x790; // bool
+                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x798; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                constexpr std::ptrdiff_t m_globalLayoutState = 0x800; // CCSCustomHudLayoutState
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x998; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x9B0; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x9C8; // CNetworkUtlVectorBase<CUtlString>
             }
             // Parent: None
             // Field count: 3
@@ -8419,6 +8429,18 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_OnHitMax = 0x7F0; // CEntityIOOutput
                 constexpr std::ptrdiff_t m_OnChangedFromMin = 0x808; // CEntityIOOutput
                 constexpr std::ptrdiff_t m_OnChangedFromMax = 0x820; // CEntityIOOutput
+            }
+            // Parent: None
+            // Field count: 8
+            namespace CCSCustomPlayerCamera {
+                constexpr std::ptrdiff_t m_hPawn = 0x788; // CHandle<CCSPlayerPawnBase>
+                constexpr std::ptrdiff_t m_nCameraMode = 0x78C; // CustomCameraMode_t
+                constexpr std::ptrdiff_t m_hFollowEntity = 0x790; // CHandle<CBaseEntity>
+                constexpr std::ptrdiff_t m_bFollowEyes = 0x794; // bool
+                constexpr std::ptrdiff_t m_vecFollowOffset = 0x798; // Vector
+                constexpr std::ptrdiff_t m_vecCameraOffset = 0x7A4; // Vector
+                constexpr std::ptrdiff_t m_bClipCameraOffset = 0x7B0; // bool
+                constexpr std::ptrdiff_t m_flCameraOffsetReturnStrength = 0x7B4; // float32
             }
             // Parent: None
             // Field count: 1
@@ -11031,11 +11053,8 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flNormCenterSize = 0xF18; // float32
             }
             // Parent: None
-            // Field count: 3
+            // Field count: 0
             namespace CCSPlayerCamera {
-                constexpr std::ptrdiff_t m_hPawn = 0x788; // CHandle<CCSPlayerPawnBase>
-                constexpr std::ptrdiff_t m_bEnabled = 0x78C; // bool
-                constexpr std::ptrdiff_t m_bIsControllingAngles = 0x78D; // bool
             }
             // Parent: None
             // Field count: 1

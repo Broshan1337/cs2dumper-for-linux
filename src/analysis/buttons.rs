@@ -14,7 +14,7 @@ use crate::source2::KeyButton;
 pub type ButtonMap = BTreeMap<String, umem>;
 
 pub fn buttons<P: Process + MemoryView>(process: &mut P) -> Result<ButtonMap> {
-    let module = process.module_by_name("libclient.so")?;
+    let module = super::module_by_name_retry(process, "libclient.so")?;
 
     let buf = process
         .read_raw(module.base, module.size as _)
