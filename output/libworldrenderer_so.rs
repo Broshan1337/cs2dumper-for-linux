@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-10 13:49:10.424194871 UTC
+// 2026-10-03 10:13:17.305414941 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -17,7 +17,7 @@ pub mod cs2_dumper {
                 RTPROXY_INSTANCE_UNIQUE_MESH = 0x1
             }
             // Alignment: 4
-            // Member count: 16
+            // Member count: 17
             #[repr(u32)]
             pub enum ObjectTypeFlags_t {
                 OBJECT_TYPE_NONE = 0x0,
@@ -35,7 +35,8 @@ pub mod cs2_dumper {
                 OBJECT_TYPE_DISABLE_VIS_CULLING = 0x10000,
                 OBJECT_TYPE_BAKED_GEOMETRY = 0x20000,
                 OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS = 0x40000,
-                OBJECT_TYPE_HAS_AGGREGATE_RTPROXY = 0x80000
+                OBJECT_TYPE_HAS_AGGREGATE_RTPROXY = 0x80000,
+                OBJECT_TYPE_HAS_EMISSIVE_GI = 0x100000
             }
             // Alignment: 1
             // Member count: 4
@@ -57,7 +58,7 @@ pub mod cs2_dumper {
             // Field count: 0
             pub mod CEntityComponent {
             }
-            // Parent: CEntityComponent
+            // Parent: None
             // Field count: 1
             //
             // Metadata:
@@ -85,7 +86,7 @@ pub mod cs2_dumper {
                 pub const m_pNextByClass: usize = 0x68; // CEntityIdentity*
             }
             // Parent: None
-            // Field count: 9
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -99,6 +100,7 @@ pub mod cs2_dumper {
                 pub const m_nVertexEmissiveByteOffset: usize = 0x10; // uint32
                 pub const m_fEmissiveFactor: usize = 0x14; // float32
                 pub const m_mWorldFromLocal: usize = 0x18; // matrix3x4_t
+                pub const m_vTintColorSRGB: usize = 0x48; // Color
             }
             // Parent: None
             // Field count: 1
@@ -109,7 +111,7 @@ pub mod cs2_dumper {
                 pub const m_BufferData: usize = 0x0; // CUtlBinaryBlock
             }
             // Parent: None
-            // Field count: 14
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -126,8 +128,9 @@ pub mod cs2_dumper {
                 pub const m_nLODOverride: usize = 0x6A; // int16
                 pub const m_nCubeMapPrecomputedHandshake: usize = 0x6C; // int32
                 pub const m_nLightProbeVolumePrecomputedHandshake: usize = 0x70; // int32
-                pub const m_renderableModel: usize = 0x78; // CStrongHandle<InfoForResourceTypeCModel>
-                pub const m_renderable: usize = 0x80; // CStrongHandle<InfoForResourceTypeCRenderMesh>
+                pub const m_flEmissiveLightingBoost: usize = 0x74; // float32
+                pub const m_renderableModel: usize = 0x80; // CStrongHandle<InfoForResourceTypeCModel>
+                pub const m_renderable: usize = 0x88; // CStrongHandle<InfoForResourceTypeCRenderMesh>
             }
             // Parent: None
             // Field count: 3
@@ -179,18 +182,15 @@ pub mod cs2_dumper {
                 pub const m_renderableModel: usize = 0x70; // CStrongHandle<InfoForResourceTypeCModel>
             }
             // Parent: None
-            // Field count: 7
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod NodeData_t {
-                pub const m_nParent: usize = 0x0; // int32
-                pub const m_vOrigin: usize = 0x4; // Vector
-                pub const m_vMinBounds: usize = 0x10; // Vector
-                pub const m_vMaxBounds: usize = 0x1C; // Vector
-                pub const m_flMinimumDistance: usize = 0x28; // float32
-                pub const m_ChildNodeIndices: usize = 0x30; // CUtlVector<int32>
-                pub const m_worldNodePrefix: usize = 0x48; // CUtlString
+                pub const m_vOrigin: usize = 0x0; // Vector
+                pub const m_vMinBounds: usize = 0xC; // Vector
+                pub const m_vMaxBounds: usize = 0x18; // Vector
+                pub const m_worldNodePrefix: usize = 0x28; // CUtlString
             }
             // Parent: None
             // Field count: 0
@@ -317,7 +317,7 @@ pub mod cs2_dumper {
                 pub const m_paramMap: usize = 0x30; // KeyValues3
             }
             // Parent: None
-            // Field count: 11
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -328,9 +328,10 @@ pub mod cs2_dumper {
                 pub const m_bHasLightmaps: usize = 0x10; // bool
                 pub const m_bBakedShadowsGamma20: usize = 0x11; // bool
                 pub const m_bCompressionEnabled: usize = 0x12; // bool
-                pub const m_bSHLightmaps: usize = 0x13; // bool
-                pub const m_nChartPackIterations: usize = 0x14; // uint8
-                pub const m_nVradQuality: usize = 0x15; // uint8
+                pub const m_nLPVEncoding: usize = 0x13; // int8
+                pub const m_nLightmapEncoding: usize = 0x14; // int8
+                pub const m_nChartPackIterations: usize = 0x15; // uint8
+                pub const m_nVradQuality: usize = 0x16; // uint8
                 pub const m_lightMaps: usize = 0x18; // CUtlVector<CStrongHandle<InfoForResourceTypeCTextureBase>>
                 pub const m_bakedShadows: usize = 0x30; // CUtlVector<BakedLightingInfo_t::BakedShadowAssignment_t>
             }

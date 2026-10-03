@@ -274,9 +274,35 @@ fn read_enum_binding_members(
 fn read_schema_system<P: Process + MemoryView>(process: &mut P) -> Result<SchemaSystem> {
     let module = super::module_by_name_retry(process, "libschemasystem.so")?;
 
-    let buf = process
-        .read_raw(module.base, module.size as _)
-        .data_part()?;
+    // 2026-09-23 (1.41.8.2): the bulk module read kept failing on this build. Root cause:
+    // the mapping now contains a PROT_NONE gap segment; a single read_raw over the whole
+    // span fails (or short-fills), leaving a buffer whose .dynamic is unreachable, so
+    // export_rva() returned None ("no CreateInterface export"). Read page-by-page instead
+    // and skip unreadable pages - every page we actually need (ELF header, .dynamic,
+    // .dynsym, .dynstr, CreateInterface prologue) is backed.
+    let buf = {
+        let total = module.size as usize;
+        let mut image = vec![0u8; total];
+        const PAGE: usize = 0x1000;
+        let mut ok_pages = 0usize;
+        for page in 0..total.div_ceil(PAGE) {
+            let start = page * PAGE;
+            let len = PAGE.min(total - start);
+            if let Ok(chunk) = process
+                .read_raw(module.base + start as u64, len as _)
+                .data_part()
+            {
+                if chunk.len() == len {
+                    image[start..start + len].copy_from_slice(&chunk);
+                    ok_pages += 1;
+                }
+            }
+        }
+        if ok_pages == 0 || !image.starts_with(b"\x7fELF") {
+            return Err(anyhow!("cannot read the libschemasystem image (page-walk)"));
+        }
+        image
+    };
 
     let list_head = interface_list_head(process, &module, &buf)?;
 

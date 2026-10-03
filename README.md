@@ -9,8 +9,11 @@ actively maintained ("this branch will likely not be kept up-to-date by myself. 
 welcome!"), and it had fallen a long way behind `main`. This fork brings it back up to date: it builds
 on current Rust, matches `main`'s output format, and dumps cleanly against the current CS2 build.
 
-**Status:** verified against CS2 build `14181` (PatchVersion 1.41.8.1) — 16 buttons, 129 interfaces
-across 30 modules, 32 offsets across 5 modules, and 3342 classes / 551 enums across 18 modules.
+**Status:** dumped against the latest CS2 update (2026-10-03): 16 buttons, 128 interfaces across
+29 modules, 28 offsets across 5 modules, 3301 classes / 569 enums across 18 modules. The
+`dwBuildNumber` signature no longer matches after that update, so `info.json` is missing the build
+number until it gets re-derived. The `output_sept*_backup/` directories are dumps of older builds,
+kept around for comparison.
 
 ## What was updated
 
@@ -117,6 +120,19 @@ several matches can resolve to the same address — so check the offset column b
 
 `output/` holds the generated `cs`, `hpp`, `json`, `rs`, and `zig` files, plus `info.json` with the
 build number and a timestamp. Module names are slugified, so `libclient.so` becomes `libclient_so.*`.
+
+## anti-cheat-helper
+
+`anti-cheat-helper/` is a standalone Windows tool (Visual Studio solution) for understanding what
+an anti-cheat actually does inside a process:
+
+- **hook_checker** — snapshots a module's `.text` section from disk, applies relocations, and
+  compares the snapshot against live memory to detect inline hooks: who hooked what, and where.
+- **Vac3/**, **scanner/**, **decoder/** — tooling around the VAC3 anti-cheat module: emulating and
+  scanning it to see what VAC modules actually look for.
+
+It is meant as a research aid to pair with the dumps — knowing the offsets is one half, knowing
+what the anti-cheat reads is the other.
 
 ## Credits
 

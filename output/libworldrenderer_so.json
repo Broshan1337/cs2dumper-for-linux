@@ -122,13 +122,14 @@
           "m_bBakedShadowsGamma20": 17,
           "m_bCompressionEnabled": 18,
           "m_bHasLightmaps": 16,
-          "m_bSHLightmaps": 19,
           "m_bakedShadows": 48,
           "m_lightMaps": 24,
-          "m_nChartPackIterations": 20,
+          "m_nChartPackIterations": 21,
+          "m_nLPVEncoding": 19,
+          "m_nLightmapEncoding": 20,
           "m_nLightmapGameVersionNumber": 4,
           "m_nLightmapVersionNumber": 0,
-          "m_nVradQuality": 21,
+          "m_nVradQuality": 22,
           "m_vLightmapUvScale": 8
         },
         "metadata": [
@@ -212,7 +213,7 @@
             "type": "Unknown"
           }
         ],
-        "parent": "CEntityComponent"
+        "parent": null
       },
       "CVoxelVisibility": {
         "fields": {
@@ -348,13 +349,10 @@
       },
       "NodeData_t": {
         "fields": {
-          "m_ChildNodeIndices": 48,
-          "m_flMinimumDistance": 40,
-          "m_nParent": 0,
-          "m_vMaxBounds": 28,
-          "m_vMinBounds": 16,
-          "m_vOrigin": 4,
-          "m_worldNodePrefix": 72
+          "m_vMaxBounds": 24,
+          "m_vMinBounds": 12,
+          "m_vOrigin": 0,
+          "m_worldNodePrefix": 40
         },
         "metadata": [
           {
@@ -408,7 +406,8 @@
           "m_nBLASIndex": 8,
           "m_nFlags": 0,
           "m_nVertexAlbedoByteOffset": 12,
-          "m_nVertexEmissiveByteOffset": 16
+          "m_nVertexEmissiveByteOffset": 16,
+          "m_vTintColorSRGB": 72
         },
         "metadata": [
           {
@@ -420,6 +419,7 @@
       },
       "SceneObject_t": {
         "fields": {
+          "m_flEmissiveLightingBoost": 116,
           "m_flFadeEndDistance": 56,
           "m_flFadeStartDistance": 52,
           "m_nCubeMapPrecomputedHandshake": 108,
@@ -428,8 +428,8 @@
           "m_nObjectID": 0,
           "m_nObjectTypeFlags": 88,
           "m_nOverlayRenderOrder": 104,
-          "m_renderable": 128,
-          "m_renderableModel": 120,
+          "m_renderable": 136,
+          "m_renderableModel": 128,
           "m_skin": 80,
           "m_vLightingOrigin": 92,
           "m_vTintColor": 60,
@@ -555,6 +555,7 @@
           "OBJECT_TYPE_DISABLED_IN_LOW_QUALITY": 128,
           "OBJECT_TYPE_DISABLE_VIS_CULLING": 65536,
           "OBJECT_TYPE_HAS_AGGREGATE_RTPROXY": 524288,
+          "OBJECT_TYPE_HAS_EMISSIVE_GI": 1048576,
           "OBJECT_TYPE_MODEL": 8,
           "OBJECT_TYPE_MODEL_HAS_LODS": 2048,
           "OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS": 262144,
