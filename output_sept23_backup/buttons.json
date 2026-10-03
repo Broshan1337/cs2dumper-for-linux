@@ -1,0 +1,20 @@
+{
+  "libclient.so": {
+    "attack": 76721456,
+    "attack2": 76721296,
+    "back": 76720400,
+    "duck": 76719216,
+    "forward": 76720560,
+    "jump": 76719376,
+    "left": 76720240,
+    "lookatweapon": 76859280,
+    "reload": 76721616,
+    "right": 76720080,
+    "showscores": 76859600,
+    "sprint": 76721776,
+    "turnleft": 76721136,
+    "turnright": 76720976,
+    "use": 76719536,
+    "zoom": 76859440
+  }
+}

@@ -50,19 +50,42 @@ pub fn module_by_name_retry<P: Process + MemoryView>(
 }
 
 pub fn module_list_retry<P: Process + MemoryView>(process: &mut P) -> Result<Vec<ModuleInfo>> {
+    // 2026-09-23 (1.41.8.2): the /proc enumeration can return a PARTIAL list (29 of ~81
+    // modules) - non-empty, so the old is_empty() check accepted it and every later
+    // per-module lookup on a missing module failed (the "no CreateInterface export in
+    // libschemasystem.so" class). Require the core analysis modules to be present and
+    // retry the whole enumeration otherwise.
+    const REQUIRED: [&str; 4] = ["libclient.so", "libschemasystem.so", "libengine2.so", "libserver.so"];
+
     let mut last_err = None;
+    let mut missing_note = String::new();
 
     for _ in 0..MODULE_LOOKUP_ATTEMPTS {
         match process.module_list() {
-            Ok(modules) if !modules.is_empty() => return Ok(modules),
+            Ok(modules) => {
+                let have = |name: &str| modules.iter().any(|m| m.name.to_string() == name);
+                if !modules.is_empty() && REQUIRED.iter().all(|r| have(r)) {
+                    return Ok(modules);
+                }
+                let missing: Vec<&str> = REQUIRED.iter().filter(|r| !have(r)).copied().collect();
+                log::warn!(
+                    "module list incomplete ({}/{} modules), missing: {} - retrying",
+                    modules.len(),
+                    REQUIRED.len(),
+                    missing.join(", ")
+                );
+                missing_note = format!("module list missing {:?}", missing);
+            }
             Err(err) => last_err = Some(err),
-            Ok(_) => last_err = None,
         }
 
         thread::sleep(MODULE_LOOKUP_DELAY);
     }
 
-    Err(last_err.map(Into::into).unwrap_or_else(|| anyhow!("module list is empty")))
+    if !missing_note.is_empty() {
+        return Err(anyhow!("{}", missing_note));
+    }
+    Err(last_err.unwrap().into())
 }
 
 #[derive(Debug)]

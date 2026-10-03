@@ -1,0 +1,40 @@
+{
+  "libclient.so": {
+    "dwEntityList": 74173440,
+    "dwGameEntitySystem": 79227216,
+    "dwGameEntitySystem_highestEntityIndex": 8480,
+    "dwGlobalVars": 73930616,
+    "dwGlowManager": 76755928,
+    "dwLocalPlayerController": 76554392,
+    "dwLocalPlayerPawn": 76783960,
+    "dwPlantedC4": 75236392,
+    "dwPrediction": 76783632,
+    "dwSensitivity": 76776056,
+    "dwSensitivity_sensitivity": 88,
+    "dwViewMatrix": 76814208,
+    "dwViewRender": 76814480
+  },
+  "libengine2.so": {
+    "dwNetworkGameClient": 10776416,
+    "dwNetworkGameClient_clientTickCount": 936,
+    "dwNetworkGameClient_deltaTick": 940,
+    "dwNetworkGameClient_isBackgroundMap": 648,
+    "dwNetworkGameClient_localPlayer": 640,
+    "dwNetworkGameClient_maxClients": 576,
+    "dwNetworkGameClient_serverTickCount": 604,
+    "dwNetworkGameClient_signOnState": 644,
+    "dwWindowHeight": 10488068,
+    "dwWindowWidth": 10488064
+  },
+  "libinputsystem.so": {
+    "dwInputSystem": 523424
+  },
+  "libmatchmaking.so": {
+    "dwGameTypes": 3789536,
+    "dwGameTypes_mapName": 3789824
+  },
+  "libpanorama.so": {
+    "HUD_CONTEXT": 7102464,
+    "MENU_CONTEXT": 7102432
+  }
+}

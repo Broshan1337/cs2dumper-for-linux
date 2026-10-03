@@ -1,44 +1,40 @@
 {
   "libclient.so": {
-    "dwCSGOInput": 73009240,
-    "dwEntityList": 73238272,
-    "dwGameEntitySystem": 78062416,
-    "dwGameEntitySystem_highestEntityIndex": 8352,
-    "dwGameRules": 76135188,
-    "dwGlobalVars": 72963064,
-    "dwGlowManager": 75663672,
-    "dwLocalPlayerController": 75478968,
-    "dwLocalPlayerPawn": 75687912,
-    "dwPlantedC4": 75407360,
-    "dwPrediction": 75687584,
-    "dwSensitivity": 75680472,
+    "dwEntityList": 74167168,
+    "dwGameEntitySystem": 79222992,
+    "dwGameEntitySystem_highestEntityIndex": 8480,
+    "dwGlobalVars": 73924856,
+    "dwGlowManager": 76749528,
+    "dwLocalPlayerController": 76547992,
+    "dwLocalPlayerPawn": 76777560,
+    "dwPlantedC4": 75230024,
+    "dwPrediction": 76777232,
+    "dwSensitivity": 76769656,
     "dwSensitivity_sensitivity": 88,
-    "dwViewAngles": 73010592,
-    "dwViewMatrix": 75716736,
-    "dwViewRender": 75717008
+    "dwViewMatrix": 76807808,
+    "dwViewRender": 76808080
   },
   "libengine2.so": {
-    "dwBuildNumber": 10342228,
-    "dwNetworkGameClient": 10675072,
-    "dwNetworkGameClient_clientTickCount": 904,
-    "dwNetworkGameClient_deltaTick": 908,
+    "dwNetworkGameClient": 10778560,
+    "dwNetworkGameClient_clientTickCount": 936,
+    "dwNetworkGameClient_deltaTick": 940,
     "dwNetworkGameClient_isBackgroundMap": 648,
     "dwNetworkGameClient_localPlayer": 640,
     "dwNetworkGameClient_maxClients": 576,
     "dwNetworkGameClient_serverTickCount": 604,
     "dwNetworkGameClient_signOnState": 644,
-    "dwWindowHeight": 10386628,
-    "dwWindowWidth": 10386624
+    "dwWindowHeight": 10490212,
+    "dwWindowWidth": 10490208
   },
   "libinputsystem.so": {
-    "dwInputSystem": 523200
+    "dwInputSystem": 523424
   },
   "libmatchmaking.so": {
-    "dwGameTypes": 3785856,
-    "dwGameTypes_mapName": 3786144
+    "dwGameTypes": 3789536,
+    "dwGameTypes_mapName": 3789824
   },
   "libpanorama.so": {
-    "HUD_CONTEXT": 6802656,
-    "MENU_CONTEXT": 6802624
+    "HUD_CONTEXT": 7102848,
+    "MENU_CONTEXT": 7102816
   }
 }
