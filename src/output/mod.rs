@@ -135,8 +135,18 @@ impl<'a> Output<'a> {
         }
 
         self.dump_schemas()?;
+        self.dump_vtables()?;
         self.dump_info(process)?;
 
+        Ok(())
+    }
+
+    /// Vtables are dumped as JSON only: the consumers of this data are the
+    /// per-update drift diff (tools/diff_dumps.py) and slot-derivation work,
+    /// not code generation.
+    fn dump_vtables(&self) -> Result<()> {
+        let content = serde_json::to_string_pretty(&self.result.vtables)?;
+        fs::write(self.out_dir.join("vtables.json"), content)?;
         Ok(())
     }
 

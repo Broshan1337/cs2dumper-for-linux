@@ -4,14 +4,14 @@
     "AnimationSystem_001": 3833072
   },
   "libclient.so": {
-    "ClientToolsInfo_001": 26136032,
-    "EmptyWorldService001_Client": 20814256,
-    "GameClientExports001": 26134144,
-    "LegacyGameUI001": 28871296,
-    "Source2Client002": 26134336,
-    "Source2ClientConfig001": 20465472,
-    "Source2ClientPrediction001": 26674640,
-    "Source2ClientUI001": 28078832
+    "ClientToolsInfo_001": 26137568,
+    "EmptyWorldService001_Client": 20815792,
+    "GameClientExports001": 26135680,
+    "LegacyGameUI001": 28872832,
+    "Source2Client002": 26135872,
+    "Source2ClientConfig001": 20467008,
+    "Source2ClientPrediction001": 26676176,
+    "Source2ClientUI001": 28080368
   },
   "libengine2.so": {
     "BenchmarkService001": 3988496,
@@ -85,19 +85,19 @@
     "MeshSystem001": 369424
   },
   "libnetworksystem.so": {
-    "FlattenedSerializersVersion001": 2460688,
-    "NetworkMessagesVersion001": 2823392,
-    "NetworkSystemVersion001": 2955344,
-    "SerializedEntitiesVersion001": 3087840
+    "FlattenedSerializersVersion001": 2461456,
+    "NetworkMessagesVersion001": 2824800,
+    "NetworkSystemVersion001": 2957008,
+    "SerializedEntitiesVersion001": 3089504
   },
   "libpanorama.so": {
-    "PanoramaUIEngine001": 3636560
+    "PanoramaUIEngine001": 3643856
   },
   "libpanorama_text_pango.so": {
     "PanoramaTextServices001": 1534800
   },
   "libpanoramauiclient.so": {
-    "PanoramaUIClient001": 1717472
+    "PanoramaUIClient001": 1724960
   },
   "libparticles.so": {
     "ParticleSystemMgr003": 2953984

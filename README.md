@@ -9,11 +9,13 @@ actively maintained ("this branch will likely not be kept up-to-date by myself. 
 welcome!"), and it had fallen a long way behind `main`. This fork brings it back up to date: it builds
 on current Rust, matches `main`'s output format, and dumps cleanly against the current CS2 build.
 
-**Status:** dumped against the latest CS2 update (2026-10-03): 16 buttons, 128 interfaces across
-29 modules, 28 offsets across 5 modules, 3301 classes / 569 enums across 18 modules. The
-`dwBuildNumber` signature no longer matches after that update, so `info.json` is missing the build
-number until it gets re-derived. The `output_sept*_backup/` directories are dumps of older builds,
-kept around for comparison.
+**Status:** dumped against the latest CS2 update (2026-10-05 build, `1.41.8.9` / 14189): all
+signatures match, `info.json` carries the build number, and the dump now includes
+`vtables.json` — every class vtable per module with its slot functions. The
+`output_sept*_backup/` directories are dumps of older builds, kept around for comparison.
+`dwViewAngles` was **removed**: the static viewangles mirror it pointed at no longer exists
+in `1.41.8.9` (the raw viewangles now live inside the `CSGOInput` object, not at a module
+offset, and nothing downstream consumed the field). Re-add it if a new static mirror appears.
 
 ## What was updated
 
@@ -120,6 +122,28 @@ several matches can resolve to the same address — so check the offset column b
 
 `output/` holds the generated `cs`, `hpp`, `json`, `rs`, and `zig` files, plus `info.json` with the
 build number and a timestamp. Module names are slugified, so `libclient.so` becomes `libclient_so.*`.
+
+`vtables.json` is a per-module map of every discovered class vtable:
+`{module: {class: {offset_to_top, primary, secondary_tables, slots: [fn RVA, ...]}}}`. Vtables are
+scanned from live memory (already-relocated pointers, no ELF reloc bookkeeping) and keyed by the
+demangled RTTI class name, so the same class keeps its key across builds and slot drift is directly
+diffable. Slot extraction is deterministic across builds: a table ends at the next validated
+vtable header or after three consecutive non-code entries — so a slot-count change or a
+non-uniform per-slot shift in the diff means the class's vtable layout really moved.
+
+### After a game update
+
+1. Run the dumper once (game running, no sudo needed — same-user memory access).
+2. Diff against the previous dump:
+
+```sh
+tools/diff_dumps.py output_old output_new
+```
+
+It reports moved/added/removed offsets, interfaces and buttons (with shift annotations), per-module
+schema field changes (renames, offset changes, added/removed classes), and vtable drift per class:
+uniform shifts (plain recompile — expected), slot-count changes, and non-uniform per-slot shifts
+(slot semantics may have moved — re-derive those slots before trusting vtable-indexed code).
 
 ## anti-cheat-helper
 

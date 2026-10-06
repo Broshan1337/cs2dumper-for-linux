@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-03 10:13:17.305414941 UTC
+// 2026-10-06 19:38:53.279116825 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -7,22 +7,25 @@ pub mod cs2_dumper {
     pub mod offsets {
         // Module: libclient.so
         pub mod libclient_so {
-            pub const dwEntityList: usize = 0x46BB380;
-            pub const dwGameEntitySystem: usize = 0x4B8D8D0;
+            pub const dwCSGOInput: usize = 0x4951AC0;
+            pub const dwEntityList: usize = 0x46BEB00;
+            pub const dwGameEntitySystem: usize = 0x4B91050;
             pub const dwGameEntitySystem_highestEntityIndex: usize = 0x2120;
-            pub const dwGlobalVars: usize = 0x46800F8;
-            pub const dwGlowManager: usize = 0x4931AD8;
-            pub const dwLocalPlayerController: usize = 0x4900798;
-            pub const dwLocalPlayerPawn: usize = 0x4938858;
-            pub const dwPlantedC4: usize = 0x47BEB48;
-            pub const dwPrediction: usize = 0x4938710;
-            pub const dwSensitivity: usize = 0x4936978;
+            pub const dwGameRules: usize = 0x493ABF0;
+            pub const dwGlobalVars: usize = 0x4683858;
+            pub const dwGlowManager: usize = 0x4935258;
+            pub const dwLocalPlayerController: usize = 0x4903F18;
+            pub const dwLocalPlayerPawn: usize = 0x493BFD8;
+            pub const dwPlantedC4: usize = 0x47C22C8;
+            pub const dwPrediction: usize = 0x493BE90;
+            pub const dwSensitivity: usize = 0x493A0F8;
             pub const dwSensitivity_sensitivity: usize = 0x58;
-            pub const dwViewMatrix: usize = 0x493FE80;
-            pub const dwViewRender: usize = 0x493FF90;
+            pub const dwViewMatrix: usize = 0x4943600;
+            pub const dwViewRender: usize = 0x4943710;
         }
         // Module: libengine2.so
         pub mod libengine2_so {
+            pub const dwBuildNumber: usize = 0x9F60FC;
             pub const dwNetworkGameClient: usize = 0xA477C0;
             pub const dwNetworkGameClient_clientTickCount: usize = 0x3A8;
             pub const dwNetworkGameClient_deltaTick: usize = 0x3AC;
@@ -45,8 +48,8 @@ pub mod cs2_dumper {
         }
         // Module: libpanorama.so
         pub mod libpanorama_so {
-            pub const HUD_CONTEXT: usize = 0x6C6180;
-            pub const MENU_CONTEXT: usize = 0x6C6160;
+            pub const HUD_CONTEXT: usize = 0x6C9100;
+            pub const MENU_CONTEXT: usize = 0x6C90E0;
         }
     }
 }
