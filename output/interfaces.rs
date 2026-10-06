@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-03 10:13:17.305414941 UTC
+// 2026-10-06 19:38:53.279116825 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -12,14 +12,14 @@ pub mod cs2_dumper {
         }
         // Module: libclient.so
         pub mod libclient_so {
-            pub const ClientToolsInfo_001: usize = 0x18ECDE0;
-            pub const EmptyWorldService001_Client: usize = 0x13D99B0;
-            pub const GameClientExports001: usize = 0x18EC680;
-            pub const LegacyGameUI001: usize = 0x1B88A80;
-            pub const Source2Client002: usize = 0x18EC740;
-            pub const Source2ClientConfig001: usize = 0x1384740;
-            pub const Source2ClientPrediction001: usize = 0x19705D0;
-            pub const Source2ClientUI001: usize = 0x1AC72F0;
+            pub const ClientToolsInfo_001: usize = 0x18ED3E0;
+            pub const EmptyWorldService001_Client: usize = 0x13D9FB0;
+            pub const GameClientExports001: usize = 0x18ECC80;
+            pub const LegacyGameUI001: usize = 0x1B89080;
+            pub const Source2Client002: usize = 0x18ECD40;
+            pub const Source2ClientConfig001: usize = 0x1384D40;
+            pub const Source2ClientPrediction001: usize = 0x1970BD0;
+            pub const Source2ClientUI001: usize = 0x1AC78F0;
         }
         // Module: libengine2.so
         pub mod libengine2_so {
@@ -102,14 +102,14 @@ pub mod cs2_dumper {
         }
         // Module: libnetworksystem.so
         pub mod libnetworksystem_so {
-            pub const FlattenedSerializersVersion001: usize = 0x258C10;
-            pub const NetworkMessagesVersion001: usize = 0x2B14E0;
-            pub const NetworkSystemVersion001: usize = 0x2D1850;
-            pub const SerializedEntitiesVersion001: usize = 0x2F1DE0;
+            pub const FlattenedSerializersVersion001: usize = 0x258F10;
+            pub const NetworkMessagesVersion001: usize = 0x2B1A60;
+            pub const NetworkSystemVersion001: usize = 0x2D1ED0;
+            pub const SerializedEntitiesVersion001: usize = 0x2F2460;
         }
         // Module: libpanorama.so
         pub mod libpanorama_so {
-            pub const PanoramaUIEngine001: usize = 0x377D50;
+            pub const PanoramaUIEngine001: usize = 0x3799D0;
         }
         // Module: libpanorama_text_pango.so
         pub mod libpanorama_text_pango_so {
@@ -117,7 +117,7 @@ pub mod cs2_dumper {
         }
         // Module: libpanoramauiclient.so
         pub mod libpanoramauiclient_so {
-            pub const PanoramaUIClient001: usize = 0x1A34E0;
+            pub const PanoramaUIClient001: usize = 0x1A5220;
         }
         // Module: libparticles.so
         pub mod libparticles_so {

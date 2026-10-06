@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-03 10:13:17.305414941 UTC
+// 2026-10-06 19:38:53.279116825 UTC
 
 pub const cs2_dumper = struct {
     pub const interfaces = struct {
@@ -10,14 +10,14 @@ pub const cs2_dumper = struct {
         };
         // Module: libclient.so
         pub const libclient_so = struct {
-            pub const ClientToolsInfo_001: usize = 0x18ECDE0;
-            pub const EmptyWorldService001_Client: usize = 0x13D99B0;
-            pub const GameClientExports001: usize = 0x18EC680;
-            pub const LegacyGameUI001: usize = 0x1B88A80;
-            pub const Source2Client002: usize = 0x18EC740;
-            pub const Source2ClientConfig001: usize = 0x1384740;
-            pub const Source2ClientPrediction001: usize = 0x19705D0;
-            pub const Source2ClientUI001: usize = 0x1AC72F0;
+            pub const ClientToolsInfo_001: usize = 0x18ED3E0;
+            pub const EmptyWorldService001_Client: usize = 0x13D9FB0;
+            pub const GameClientExports001: usize = 0x18ECC80;
+            pub const LegacyGameUI001: usize = 0x1B89080;
+            pub const Source2Client002: usize = 0x18ECD40;
+            pub const Source2ClientConfig001: usize = 0x1384D40;
+            pub const Source2ClientPrediction001: usize = 0x1970BD0;
+            pub const Source2ClientUI001: usize = 0x1AC78F0;
         };
         // Module: libengine2.so
         pub const libengine2_so = struct {
@@ -100,14 +100,14 @@ pub const cs2_dumper = struct {
         };
         // Module: libnetworksystem.so
         pub const libnetworksystem_so = struct {
-            pub const FlattenedSerializersVersion001: usize = 0x258C10;
-            pub const NetworkMessagesVersion001: usize = 0x2B14E0;
-            pub const NetworkSystemVersion001: usize = 0x2D1850;
-            pub const SerializedEntitiesVersion001: usize = 0x2F1DE0;
+            pub const FlattenedSerializersVersion001: usize = 0x258F10;
+            pub const NetworkMessagesVersion001: usize = 0x2B1A60;
+            pub const NetworkSystemVersion001: usize = 0x2D1ED0;
+            pub const SerializedEntitiesVersion001: usize = 0x2F2460;
         };
         // Module: libpanorama.so
         pub const libpanorama_so = struct {
-            pub const PanoramaUIEngine001: usize = 0x377D50;
+            pub const PanoramaUIEngine001: usize = 0x3799D0;
         };
         // Module: libpanorama_text_pango.so
         pub const libpanorama_text_pango_so = struct {
@@ -115,7 +115,7 @@ pub const cs2_dumper = struct {
         };
         // Module: libpanoramauiclient.so
         pub const libpanoramauiclient_so = struct {
-            pub const PanoramaUIClient001: usize = 0x1A34E0;
+            pub const PanoramaUIClient001: usize = 0x1A5220;
         };
         // Module: libparticles.so
         pub const libparticles_so = struct {

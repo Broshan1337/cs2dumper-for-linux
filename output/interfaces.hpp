@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-03 10:13:17.305414941 UTC
+// 2026-10-06 19:38:53.279116825 UTC
 
 #pragma once
 
@@ -15,14 +15,14 @@ namespace cs2_dumper {
         }
         // Module: libclient.so
         namespace libclient_so {
-            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x18ECDE0;
-            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x13D99B0;
-            constexpr std::ptrdiff_t GameClientExports001 = 0x18EC680;
-            constexpr std::ptrdiff_t LegacyGameUI001 = 0x1B88A80;
-            constexpr std::ptrdiff_t Source2Client002 = 0x18EC740;
-            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1384740;
-            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x19705D0;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x1AC72F0;
+            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x18ED3E0;
+            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x13D9FB0;
+            constexpr std::ptrdiff_t GameClientExports001 = 0x18ECC80;
+            constexpr std::ptrdiff_t LegacyGameUI001 = 0x1B89080;
+            constexpr std::ptrdiff_t Source2Client002 = 0x18ECD40;
+            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1384D40;
+            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1970BD0;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x1AC78F0;
         }
         // Module: libengine2.so
         namespace libengine2_so {
@@ -105,14 +105,14 @@ namespace cs2_dumper {
         }
         // Module: libnetworksystem.so
         namespace libnetworksystem_so {
-            constexpr std::ptrdiff_t FlattenedSerializersVersion001 = 0x258C10;
-            constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x2B14E0;
-            constexpr std::ptrdiff_t NetworkSystemVersion001 = 0x2D1850;
-            constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0x2F1DE0;
+            constexpr std::ptrdiff_t FlattenedSerializersVersion001 = 0x258F10;
+            constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x2B1A60;
+            constexpr std::ptrdiff_t NetworkSystemVersion001 = 0x2D1ED0;
+            constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0x2F2460;
         }
         // Module: libpanorama.so
         namespace libpanorama_so {
-            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x377D50;
+            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x3799D0;
         }
         // Module: libpanorama_text_pango.so
         namespace libpanorama_text_pango_so {
@@ -120,7 +120,7 @@ namespace cs2_dumper {
         }
         // Module: libpanoramauiclient.so
         namespace libpanoramauiclient_so {
-            constexpr std::ptrdiff_t PanoramaUIClient001 = 0x1A34E0;
+            constexpr std::ptrdiff_t PanoramaUIClient001 = 0x1A5220;
         }
         // Module: libparticles.so
         namespace libparticles_so {

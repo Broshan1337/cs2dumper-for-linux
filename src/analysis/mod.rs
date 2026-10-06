@@ -2,6 +2,7 @@ pub use buttons::*;
 pub use interfaces::*;
 pub use offsets::*;
 pub use schemas::*;
+pub use vtables::*;
 
 use std::any::type_name;
 use std::thread;
@@ -17,6 +18,7 @@ mod buttons;
 mod interfaces;
 mod offsets;
 mod schemas;
+mod vtables;
 
 /// Number of attempts made when looking up a module.
 ///
@@ -94,6 +96,7 @@ pub struct AnalysisResult {
     pub interfaces: InterfaceMap,
     pub offsets: OffsetMap,
     pub schemas: SchemaMap,
+    pub vtables: VtableMap,
 }
 
 pub fn analyze_all<P: Process + MemoryView>(process: &mut P) -> Result<AnalysisResult> {
@@ -139,11 +142,25 @@ pub fn analyze_all<P: Process + MemoryView>(process: &mut P) -> Result<AnalysisR
         schemas.len()
     );
 
+    let vtables = analyze(process, vtables);
+
+    let vtable_count = vtables
+        .values()
+        .map(|classes| classes.len())
+        .sum::<usize>();
+
+    info!(
+        "found {} class vtables across {} modules",
+        vtable_count,
+        vtables.len()
+    );
+
     Ok(AnalysisResult {
         buttons,
         interfaces,
         offsets,
         schemas,
+        vtables,
     })
 }
 

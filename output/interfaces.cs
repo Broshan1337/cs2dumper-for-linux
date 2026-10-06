@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-03 10:13:17.305414941 UTC
+// 2026-10-06 19:38:53.279116825 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: libanimationsystem.so
@@ -9,14 +9,14 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint ClientToolsInfo_001 = 0x18ECDE0;
-        public const nint EmptyWorldService001_Client = 0x13D99B0;
-        public const nint GameClientExports001 = 0x18EC680;
-        public const nint LegacyGameUI001 = 0x1B88A80;
-        public const nint Source2Client002 = 0x18EC740;
-        public const nint Source2ClientConfig001 = 0x1384740;
-        public const nint Source2ClientPrediction001 = 0x19705D0;
-        public const nint Source2ClientUI001 = 0x1AC72F0;
+        public const nint ClientToolsInfo_001 = 0x18ED3E0;
+        public const nint EmptyWorldService001_Client = 0x13D9FB0;
+        public const nint GameClientExports001 = 0x18ECC80;
+        public const nint LegacyGameUI001 = 0x1B89080;
+        public const nint Source2Client002 = 0x18ECD40;
+        public const nint Source2ClientConfig001 = 0x1384D40;
+        public const nint Source2ClientPrediction001 = 0x1970BD0;
+        public const nint Source2ClientUI001 = 0x1AC78F0;
     }
     // Module: libengine2.so
     public static class Libengine2So {
@@ -99,14 +99,14 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libnetworksystem.so
     public static class LibnetworksystemSo {
-        public const nint FlattenedSerializersVersion001 = 0x258C10;
-        public const nint NetworkMessagesVersion001 = 0x2B14E0;
-        public const nint NetworkSystemVersion001 = 0x2D1850;
-        public const nint SerializedEntitiesVersion001 = 0x2F1DE0;
+        public const nint FlattenedSerializersVersion001 = 0x258F10;
+        public const nint NetworkMessagesVersion001 = 0x2B1A60;
+        public const nint NetworkSystemVersion001 = 0x2D1ED0;
+        public const nint SerializedEntitiesVersion001 = 0x2F2460;
     }
     // Module: libpanorama.so
     public static class LibpanoramaSo {
-        public const nint PanoramaUIEngine001 = 0x377D50;
+        public const nint PanoramaUIEngine001 = 0x3799D0;
     }
     // Module: libpanorama_text_pango.so
     public static class LibpanoramaTextPangoSo {
@@ -114,7 +114,7 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libpanoramauiclient.so
     public static class LibpanoramauiclientSo {
-        public const nint PanoramaUIClient001 = 0x1A34E0;
+        public const nint PanoramaUIClient001 = 0x1A5220;
     }
     // Module: libparticles.so
     public static class LibparticlesSo {
