@@ -9,7 +9,7 @@ actively maintained ("this branch will likely not be kept up-to-date by myself. 
 welcome!"), and it had fallen a long way behind `main`. This fork brings it back up to date: it builds
 on current Rust, matches `main`'s output format, and dumps cleanly against the current CS2 build.
 
-**Status:** dumped against the latest CS2 update (2026-10-05 build, `1.41.8.9` / 14189): all
+**Status:** dumped against the latest CS2 update (2026-10-15 build, `1.41.9.1` / 14191): all
 signatures match, `info.json` carries the build number, and the dump now includes
 `vtables.json` — every class vtable per module with its slot functions. The
 `output_sept*_backup/` directories are dumps of older builds, kept around for comparison.

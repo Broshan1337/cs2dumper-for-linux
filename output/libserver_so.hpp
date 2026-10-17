@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-06 19:38:53.279116825 UTC
+// 2026-10-15 15:40:22.041023216 UTC
 
 #pragma once
 
@@ -10,7 +10,7 @@ namespace cs2_dumper {
     namespace schemas {
         // Module: libserver.so
         // Class count: 969
-        // Enum count: 244
+        // Enum count: 243
         namespace libserver_so {
             // Alignment: 4
             // Member count: 4
@@ -1220,7 +1220,7 @@ namespace cs2_dumper {
                 k_EGCMsgLookupAccountFromInput = 0x42,
                 k_EGCMsgSendHTTPRequest = 0x43,
                 k_EGCMsgSendHTTPRequestResponse = 0x44,
-                k_EGCMsgPreTestSetup = 0x45,
+                k_EGCMsgPreTestSetup_DEPRECATED = 0x45,
                 k_EGCMsgRecordSupportAction = 0x46,
                 k_EGCMsgGetAccountDetails_DEPRECATED = 0x47,
                 k_EGCMsgReceiveInterAppMessage = 0x49,
@@ -1521,16 +1521,6 @@ namespace cs2_dumper {
                 HULL_SMALL = 0x9,
                 NUM_HULLS = 0xA,
                 HULL_NONE = 0xB
-            };
-            // Alignment: 4
-            // Member count: 6
-            enum class EUnlockStyle : uint32_t {
-                k_UnlockStyle_Succeeded = 0x0,
-                k_UnlockStyle_Failed_PreReq = 0x1,
-                k_UnlockStyle_Failed_CantAfford = 0x2,
-                k_UnlockStyle_Failed_CantCommit = 0x3,
-                k_UnlockStyle_Failed_CantLockCache = 0x4,
-                k_UnlockStyle_Failed_CantAffordAttrib = 0x5
             };
             // Alignment: 1
             // Member count: 3
@@ -2924,15 +2914,15 @@ namespace cs2_dumper {
                 k_EMsgGCCraft = 0x3EA,
                 k_EMsgGCCraftResponse = 0x3EB,
                 k_EMsgGCDelete = 0x3EC,
-                k_EMsgGCVerifyCacheSubscription = 0x3ED,
+                k_EMsgGCVerifyCacheSubscription_DEPRECATED = 0x3ED,
                 k_EMsgGCNameItem = 0x3EE,
                 k_EMsgGCUnlockCrate_DEPRECATED = 0x3EF,
                 k_EMsgGCUnlockCrateResponse = 0x3F0,
-                k_EMsgGCPaintItem = 0x3F1,
-                k_EMsgGCPaintItemResponse = 0x3F2,
-                k_EMsgGCGoldenWrenchBroadcast = 0x3F3,
-                k_EMsgGCMOTDRequest = 0x3F4,
-                k_EMsgGCMOTDRequestResponse = 0x3F5,
+                k_EMsgGCPaintItem_DEPRECATED = 0x3F1,
+                k_EMsgGCPaintItemResponse_DEPRECATED = 0x3F2,
+                k_EMsgGCGoldenWrenchBroadcast_DEPRECATED = 0x3F3,
+                k_EMsgGCMOTDRequest_DEPRECATED = 0x3F4,
+                k_EMsgGCMOTDRequestResponse_DEPRECATED = 0x3F5,
                 k_EMsgGCAddItemToSocket_DEPRECATED = 0x3F6,
                 k_EMsgGCAddItemToSocketResponse_DEPRECATED = 0x3F7,
                 k_EMsgGCAddSocketToBaseItem_DEPRECATED = 0x3F8,
@@ -2942,59 +2932,59 @@ namespace cs2_dumper {
                 k_EMsgGCNameBaseItemResponse = 0x3FC,
                 k_EMsgGCRemoveSocketItem_DEPRECATED = 0x3FD,
                 k_EMsgGCRemoveSocketItemResponse_DEPRECATED = 0x3FE,
-                k_EMsgGCCustomizeItemTexture = 0x3FF,
-                k_EMsgGCCustomizeItemTextureResponse = 0x400,
+                k_EMsgGCCustomizeItemTexture_DEPRECATED = 0x3FF,
+                k_EMsgGCCustomizeItemTextureResponse_DEPRECATED = 0x400,
                 k_EMsgGCUseItemRequest = 0x401,
                 k_EMsgGCUseItemResponse = 0x402,
                 k_EMsgGCGiftedItems_DEPRECATED = 0x403,
                 k_EMsgGCRemoveItemName = 0x406,
-                k_EMsgGCRemoveItemPaint = 0x407,
-                k_EMsgGCGiftWrapItem = 0x408,
-                k_EMsgGCGiftWrapItemResponse = 0x409,
-                k_EMsgGCDeliverGift = 0x40A,
-                k_EMsgGCDeliverGiftResponseGiver = 0x40B,
-                k_EMsgGCDeliverGiftResponseReceiver = 0x40C,
-                k_EMsgGCUnwrapGiftRequest = 0x40D,
-                k_EMsgGCUnwrapGiftResponse = 0x40E,
-                k_EMsgGCSetItemStyle = 0x40F,
-                k_EMsgGCUsedClaimCodeItem = 0x410,
+                k_EMsgGCRemoveItemPaint_DEPRECATED = 0x407,
+                k_EMsgGCGiftWrapItem_DEPRECATED = 0x408,
+                k_EMsgGCGiftWrapItemResponse_DEPRECATED = 0x409,
+                k_EMsgGCDeliverGift_DEPRECATED = 0x40A,
+                k_EMsgGCDeliverGiftResponseGiver_DEPRECATED = 0x40B,
+                k_EMsgGCDeliverGiftResponseReceiver_DEPRECATED = 0x40C,
+                k_EMsgGCUnwrapGiftRequest_DEPRECATED = 0x40D,
+                k_EMsgGCUnwrapGiftResponse_DEPRECATED = 0x40E,
+                k_EMsgGCSetItemStyle_DEPRECATED = 0x40F,
+                k_EMsgGCUsedClaimCodeItem_DEPRECATED = 0x410,
                 k_EMsgGCSortItems = 0x411,
                 k_EMsgGC_RevolvingLootList_DEPRECATED = 0x412,
-                k_EMsgGCLookupAccount = 0x413,
-                k_EMsgGCLookupAccountResponse = 0x414,
-                k_EMsgGCLookupAccountName = 0x415,
-                k_EMsgGCLookupAccountNameResponse = 0x416,
+                k_EMsgGCLookupAccount_DEPRECATED = 0x413,
+                k_EMsgGCLookupAccountResponse_DEPRECATED = 0x414,
+                k_EMsgGCLookupAccountName_DEPRECATED = 0x415,
+                k_EMsgGCLookupAccountNameResponse_DEPRECATED = 0x416,
                 k_EMsgGCUpdateItemSchema = 0x419,
-                k_EMsgGCRemoveCustomTexture = 0x41B,
-                k_EMsgGCRemoveCustomTextureResponse = 0x41C,
-                k_EMsgGCRemoveMakersMark = 0x41D,
-                k_EMsgGCRemoveMakersMarkResponse = 0x41E,
-                k_EMsgGCRemoveUniqueCraftIndex = 0x41F,
-                k_EMsgGCRemoveUniqueCraftIndexResponse = 0x420,
+                k_EMsgGCRemoveCustomTexture_DEPRECATED = 0x41B,
+                k_EMsgGCRemoveCustomTextureResponse_DEPRECATED = 0x41C,
+                k_EMsgGCRemoveMakersMark_DEPRECATED = 0x41D,
+                k_EMsgGCRemoveMakersMarkResponse_DEPRECATED = 0x41E,
+                k_EMsgGCRemoveUniqueCraftIndex_DEPRECATED = 0x41F,
+                k_EMsgGCRemoveUniqueCraftIndexResponse_DEPRECATED = 0x420,
                 k_EMsgGCSaxxyBroadcast = 0x421,
                 k_EMsgGCBackpackSortFinished = 0x422,
-                k_EMsgGCCollectItem = 0x425,
+                k_EMsgGCCollectItem_DEPRECATED = 0x425,
                 k_EMsgGCItemAcknowledged__DEPRECATED = 0x426,
                 k_EMsgGC_ReportAbuse = 0x429,
                 k_EMsgGC_ReportAbuseResponse = 0x42A,
                 k_EMsgGCNameItemNotification = 0x42C,
-                k_EMsgGCApplyConsumableEffects = 0x42D,
+                k_EMsgGCApplyConsumableEffects_DEPRECATED = 0x42D,
                 k_EMsgGCConsumableExhausted = 0x42E,
                 k_EMsgGCShowItemsPickedUp = 0x42F,
-                k_EMsgGCClientDisplayNotification = 0x430,
-                k_EMsgGCApplyStrangePart = 0x431,
+                k_EMsgGCClientDisplayNotification_DEPRECATED = 0x430,
+                k_EMsgGCApplyStrangePart_DEPRECATED = 0x431,
                 k_EMsgGC_IncrementKillCountAttribute = 0x432,
                 k_EMsgGC_IncrementKillCountResponse = 0x433,
-                k_EMsgGCApplyPennantUpgrade = 0x434,
+                k_EMsgGCApplyPennantUpgrade_DEPRECATED = 0x434,
                 k_EMsgGCSetItemPositions = 0x435,
-                k_EMsgGCApplyEggEssence = 0x436,
-                k_EMsgGCNameEggEssenceResponse = 0x437,
-                k_EMsgGCPaintKitItem = 0x438,
-                k_EMsgGCPaintKitBaseItem = 0x439,
-                k_EMsgGCPaintKitItemResponse = 0x43A,
+                k_EMsgGCApplyEggEssence_DEPRECATED = 0x436,
+                k_EMsgGCNameEggEssenceResponse_DEPRECATED = 0x437,
+                k_EMsgGCPaintKitItem_DEPRECATED = 0x438,
+                k_EMsgGCPaintKitBaseItem_DEPRECATED = 0x439,
+                k_EMsgGCPaintKitItemResponse_DEPRECATED = 0x43A,
                 k_EMsgGCGiftedItems = 0x43B,
-                k_EMsgGCUnlockItemStyle = 0x43C,
-                k_EMsgGCUnlockItemStyleResponse = 0x43D,
+                k_EMsgGCUnlockItemStyle_DEPRECATED = 0x43C,
+                k_EMsgGCUnlockItemStyleResponse_DEPRECATED = 0x43D,
                 k_EMsgGCApplySticker = 0x43E,
                 k_EMsgGCItemAcknowledged = 0x43F,
                 k_EMsgGCStatTrakSwap = 0x440,
@@ -3004,19 +2994,19 @@ namespace cs2_dumper {
                 k_EMsgGCCasketItemAdd = 0x444,
                 k_EMsgGCCasketItemExtract = 0x445,
                 k_EMsgGCCasketItemLoadContents = 0x446,
-                k_EMsgGCServerBrowser_FavoriteServer = 0x641,
-                k_EMsgGCServerBrowser_BlacklistServer = 0x642,
-                k_EMsgGCServerRentalsBase = 0x6A4,
-                k_EMsgGCItemPreviewCheckStatus = 0x6A5,
-                k_EMsgGCItemPreviewStatusResponse = 0x6A6,
-                k_EMsgGCItemPreviewRequest = 0x6A7,
-                k_EMsgGCItemPreviewRequestResponse = 0x6A8,
-                k_EMsgGCItemPreviewExpire = 0x6A9,
-                k_EMsgGCItemPreviewExpireNotification = 0x6AA,
-                k_EMsgGCItemPreviewItemBoughtNotification = 0x6AB,
+                k_EMsgGCServerBrowser_FavoriteServer_DEPRECATED = 0x641,
+                k_EMsgGCServerBrowser_BlacklistServer_DEPRECATED = 0x642,
+                k_EMsgGCServerRentalsBase_DEPRECATED = 0x6A4,
+                k_EMsgGCItemPreviewCheckStatus_DEPRECATED = 0x6A5,
+                k_EMsgGCItemPreviewStatusResponse_DEPRECATED = 0x6A6,
+                k_EMsgGCItemPreviewRequest_DEPRECATED = 0x6A7,
+                k_EMsgGCItemPreviewRequestResponse_DEPRECATED = 0x6A8,
+                k_EMsgGCItemPreviewExpire_DEPRECATED = 0x6A9,
+                k_EMsgGCItemPreviewExpireNotification_DEPRECATED = 0x6AA,
+                k_EMsgGCItemPreviewItemBoughtNotification_DEPRECATED = 0x6AB,
                 k_EMsgGCDev_NewItemRequest = 0x7D1,
                 k_EMsgGCDev_NewItemRequestResponse = 0x7D2,
-                k_EMsgGCDev_PaintKitDropItem = 0x7D3,
+                k_EMsgGCDev_PaintKitDropItem_DEPRECATED = 0x7D3,
                 k_EMsgGCDev_SchemaReservationRequest = 0x7D4,
                 k_EMsgGCStoreGetUserData = 0x9C4,
                 k_EMsgGCStoreGetUserDataResponse = 0x9C5,
@@ -3026,8 +3016,8 @@ namespace cs2_dumper {
                 k_EMsgGCStorePurchaseFinalizeResponse = 0x9C9,
                 k_EMsgGCStorePurchaseCancel = 0x9CA,
                 k_EMsgGCStorePurchaseCancelResponse = 0x9CB,
-                k_EMsgGCStorePurchaseQueryTxn = 0x9CC,
-                k_EMsgGCStorePurchaseQueryTxnResponse = 0x9CD,
+                k_EMsgGCStorePurchaseQueryTxn_DEPRECATED = 0x9CC,
+                k_EMsgGCStorePurchaseQueryTxnResponse_DEPRECATED = 0x9CD,
                 k_EMsgGCStorePurchaseInit = 0x9CE,
                 k_EMsgGCStorePurchaseInitResponse = 0x9CF,
                 k_EMsgGCBannedWordListRequest = 0x9D0,
@@ -3936,7 +3926,7 @@ namespace cs2_dumper {
             // Parent: CBaseTrigger
             // Field count: 1
             namespace CCSMinimapVolume {
-                constexpr std::ptrdiff_t m_strMinimapName = 0xCA0; // CUtlString
+                constexpr std::ptrdiff_t m_strMinimapName = 0xCB8; // CUtlString
             }
             // Parent: CBaseTrigger
             // Field count: 2
@@ -5747,115 +5737,114 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_WaitComplete = 0xE0; // CPulse_ResumePoint
             }
             // Parent: CCSPlayerPawnBase
-            // Field count: 107
+            // Field count: 106
             namespace CCSPlayerPawn {
-                constexpr std::ptrdiff_t m_pBulletServices = 0x10F0; // CCSPlayer_BulletServices*
-                constexpr std::ptrdiff_t m_pHostageServices = 0x10F8; // CCSPlayer_HostageServices*
-                constexpr std::ptrdiff_t m_pBuyServices = 0x1100; // CCSPlayer_BuyServices*
-                constexpr std::ptrdiff_t m_pActionTrackingServices = 0x1108; // CCSPlayer_ActionTrackingServices*
-                constexpr std::ptrdiff_t m_pAimPunchServices = 0x1110; // CCSPlayer_AimPunchServices*
-                constexpr std::ptrdiff_t m_pRadioServices = 0x1118; // CCSPlayer_RadioServices*
-                constexpr std::ptrdiff_t m_pDamageReactServices = 0x1120; // CCSPlayer_DamageReactServices*
-                constexpr std::ptrdiff_t m_nCharacterDefIndex = 0x1128; // uint16
-                constexpr std::ptrdiff_t m_bHasFemaleVoice = 0x112A; // bool
-                constexpr std::ptrdiff_t m_strVOPrefix = 0x1130; // CUtlString
-                constexpr std::ptrdiff_t m_szLastPlaceName = 0x1138; // char[18]
-                constexpr std::ptrdiff_t m_bInHostageResetZone = 0x1228; // bool
-                constexpr std::ptrdiff_t m_bInBuyZone = 0x1229; // bool
-                constexpr std::ptrdiff_t m_TouchingBuyZones = 0x1230; // CUtlVector<CHandle<CBaseEntity>>
-                constexpr std::ptrdiff_t m_bWasInBuyZone = 0x1248; // bool
-                constexpr std::ptrdiff_t m_bInHostageRescueZone = 0x1249; // bool
-                constexpr std::ptrdiff_t m_bInBombZone = 0x124A; // bool
-                constexpr std::ptrdiff_t m_bWasInHostageRescueZone = 0x124B; // bool
-                constexpr std::ptrdiff_t m_iRetakesOffering = 0x124C; // int32
-                constexpr std::ptrdiff_t m_iRetakesOfferingCard = 0x1250; // int32
-                constexpr std::ptrdiff_t m_bRetakesHasDefuseKit = 0x1254; // bool
-                constexpr std::ptrdiff_t m_bRetakesMVPLastRound = 0x1255; // bool
-                constexpr std::ptrdiff_t m_iRetakesMVPBoostItem = 0x1258; // int32
-                constexpr std::ptrdiff_t m_RetakesMVPBoostExtraUtility = 0x125C; // loadout_slot_t
-                constexpr std::ptrdiff_t m_flHealthShotBoostExpirationTime = 0x1260; // GameTime_t
-                constexpr std::ptrdiff_t m_flLandingTimeSeconds = 0x1264; // float32
-                constexpr std::ptrdiff_t m_bIsBuyMenuOpen = 0x1268; // bool
-                constexpr std::ptrdiff_t m_lastLandTime = 0x12A0; // GameTime_t
-                constexpr std::ptrdiff_t m_bOnGroundLastTick = 0x12A4; // bool
-                constexpr std::ptrdiff_t m_iPlayerLocked = 0x12A8; // int32
-                constexpr std::ptrdiff_t m_flTimeOfLastInjury = 0x12B0; // GameTime_t
-                constexpr std::ptrdiff_t m_flNextSprayDecalTime = 0x12B4; // GameTime_t
-                constexpr std::ptrdiff_t m_bNextSprayDecalTimeExpedited = 0x12B8; // bool
-                constexpr std::ptrdiff_t m_nRagdollDamageBone = 0x12BC; // int32
-                constexpr std::ptrdiff_t m_vRagdollDamageForce = 0x12C0; // Vector
-                constexpr std::ptrdiff_t m_szRagdollDamageWeaponName = 0x12CC; // char[64]
-                constexpr std::ptrdiff_t m_bRagdollDamageHeadshot = 0x130C; // bool
-                constexpr std::ptrdiff_t m_vRagdollServerOrigin = 0x1310; // VectorWS
-                constexpr std::ptrdiff_t m_EconGloves = 0x1320; // CEconItemView
-                constexpr std::ptrdiff_t m_nEconGlovesChanged = 0x1708; // uint8
-                constexpr std::ptrdiff_t m_vecCurrentMinimapVolumes = 0x1710; // CUtlVector<CHandle<CCSMinimapVolume>>
-                constexpr std::ptrdiff_t m_hActiveMinimapVolume = 0x1728; // CHandle<CCSMinimapVolume>
-                constexpr std::ptrdiff_t m_qDeathEyeAngles = 0x172C; // QAngle
-                constexpr std::ptrdiff_t m_bLeftHanded = 0x1738; // bool
-                constexpr std::ptrdiff_t m_fSwitchedHandednessTime = 0x173C; // GameTime_t
-                constexpr std::ptrdiff_t m_flViewmodelOffsetX = 0x1740; // float32
-                constexpr std::ptrdiff_t m_flViewmodelOffsetY = 0x1744; // float32
-                constexpr std::ptrdiff_t m_flViewmodelOffsetZ = 0x1748; // float32
-                constexpr std::ptrdiff_t m_flViewmodelFOV = 0x174C; // float32
-                constexpr std::ptrdiff_t m_bIsWalking = 0x1750; // bool
-                constexpr std::ptrdiff_t m_fLastGivenDefuserTime = 0x1754; // float32
-                constexpr std::ptrdiff_t m_fLastGivenBombTime = 0x1758; // float32
-                constexpr std::ptrdiff_t m_flDealtDamageToEnemyMostRecentTimestamp = 0x175C; // float32
-                constexpr std::ptrdiff_t m_iDisplayHistoryBits = 0x1760; // uint32
-                constexpr std::ptrdiff_t m_flLastAttackedTeammate = 0x1764; // float32
-                constexpr std::ptrdiff_t m_allowAutoFollowTime = 0x1768; // GameTime_t
-                constexpr std::ptrdiff_t m_bResetArmorNextSpawn = 0x176C; // bool
-                constexpr std::ptrdiff_t m_nLastKillerIndex = 0x1770; // CEntityIndex
-                constexpr std::ptrdiff_t m_entitySpottedState = 0x1778; // EntitySpottedState_t
-                constexpr std::ptrdiff_t m_nSpotRules = 0x1790; // int32
-                constexpr std::ptrdiff_t m_bIsScoped = 0x1794; // bool
-                constexpr std::ptrdiff_t m_bResumeZoom = 0x1795; // bool
-                constexpr std::ptrdiff_t m_bIsDefusing = 0x1796; // bool
-                constexpr std::ptrdiff_t m_bIsGrabbingHostage = 0x1797; // bool
-                constexpr std::ptrdiff_t m_iBlockingUseActionInProgress = 0x1798; // CSPlayerBlockingUseAction_t
-                constexpr std::ptrdiff_t m_flEmitSoundTime = 0x179C; // GameTime_t
-                constexpr std::ptrdiff_t m_bInNoDefuseArea = 0x17A0; // bool
-                constexpr std::ptrdiff_t m_iBombSiteIndex = 0x17A4; // CEntityIndex
-                constexpr std::ptrdiff_t m_nWhichBombZone = 0x17A8; // int32
-                constexpr std::ptrdiff_t m_bInBombZoneTrigger = 0x17AC; // bool
-                constexpr std::ptrdiff_t m_bWasInBombZoneTrigger = 0x17AD; // bool
-                constexpr std::ptrdiff_t m_iShotsFired = 0x17B0; // int32
-                constexpr std::ptrdiff_t m_flFlinchStack = 0x17B4; // float32
-                constexpr std::ptrdiff_t m_flVelocityModifier = 0x17B8; // float32
-                constexpr std::ptrdiff_t m_vecTotalBulletForce = 0x17BC; // Vector
-                constexpr std::ptrdiff_t m_bWaitForNoAttack = 0x17C8; // bool
-                constexpr std::ptrdiff_t m_ignoreLadderJumpTime = 0x17CC; // float32
-                constexpr std::ptrdiff_t m_bKilledByHeadshot = 0x17D0; // bool
-                constexpr std::ptrdiff_t m_LastHitBox = 0x17D4; // int32
-                constexpr std::ptrdiff_t m_pBot = 0x17D8; // CCSBot*
-                constexpr std::ptrdiff_t m_bBotAllowActive = 0x17E0; // bool
-                constexpr std::ptrdiff_t m_nLastPickupPriority = 0x17E4; // int32
-                constexpr std::ptrdiff_t m_flLastPickupPriorityTime = 0x17E8; // float32
-                constexpr std::ptrdiff_t m_ArmorValue = 0x17EC; // int32
-                constexpr std::ptrdiff_t m_unCurrentEquipmentValue = 0x17F0; // uint16
-                constexpr std::ptrdiff_t m_unRoundStartEquipmentValue = 0x17F2; // uint16
-                constexpr std::ptrdiff_t m_unFreezetimeEndEquipmentValue = 0x17F4; // uint16
-                constexpr std::ptrdiff_t m_iLastWeaponFireUsercmd = 0x17F8; // int32
-                constexpr std::ptrdiff_t m_bIsSpawning = 0x17FC; // bool
-                constexpr std::ptrdiff_t m_iDeathFlags = 0x1808; // int32
-                constexpr std::ptrdiff_t m_bHasDeathInfo = 0x180C; // bool
-                constexpr std::ptrdiff_t m_flDeathInfoTime = 0x1810; // float32
-                constexpr std::ptrdiff_t m_vecDeathInfoOrigin = 0x1814; // VectorWS
-                constexpr std::ptrdiff_t m_vecPlayerPatchEconIndices = 0x1820; // uint32[5]
-                constexpr std::ptrdiff_t m_GunGameImmunityColor = 0x1834; // Color
-                constexpr std::ptrdiff_t m_grenadeParameterStashTime = 0x1838; // GameTime_t
-                constexpr std::ptrdiff_t m_bGrenadeParametersStashed = 0x183C; // bool
-                constexpr std::ptrdiff_t m_angStashedShootAngles = 0x1840; // QAngle
-                constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPosition = 0x184C; // VectorWS
-                constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPawnCenter = 0x1858; // VectorWS
-                constexpr std::ptrdiff_t m_vecStashedVelocity = 0x1864; // Vector
-                constexpr std::ptrdiff_t m_bCommittingSuicideOnTeamChange = 0x1878; // bool
-                constexpr std::ptrdiff_t m_wasNotKilledNaturally = 0x1879; // bool
-                constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x187C; // GameTime_t
-                constexpr std::ptrdiff_t m_bGunGameImmunity = 0x1880; // bool
-                constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x1884; // float32
-                constexpr std::ptrdiff_t m_angEyeAngles = 0x1888; // QAngle
+                constexpr std::ptrdiff_t m_pBulletServices = 0x10F8; // CCSPlayer_BulletServices*
+                constexpr std::ptrdiff_t m_pHostageServices = 0x1100; // CCSPlayer_HostageServices*
+                constexpr std::ptrdiff_t m_pBuyServices = 0x1108; // CCSPlayer_BuyServices*
+                constexpr std::ptrdiff_t m_pActionTrackingServices = 0x1110; // CCSPlayer_ActionTrackingServices*
+                constexpr std::ptrdiff_t m_pAimPunchServices = 0x1118; // CCSPlayer_AimPunchServices*
+                constexpr std::ptrdiff_t m_pRadioServices = 0x1120; // CCSPlayer_RadioServices*
+                constexpr std::ptrdiff_t m_pDamageReactServices = 0x1128; // CCSPlayer_DamageReactServices*
+                constexpr std::ptrdiff_t m_nCharacterDefIndex = 0x1130; // uint16
+                constexpr std::ptrdiff_t m_bHasFemaleVoice = 0x1132; // bool
+                constexpr std::ptrdiff_t m_strVOPrefix = 0x1138; // CUtlString
+                constexpr std::ptrdiff_t m_szLastPlaceName = 0x1140; // char[18]
+                constexpr std::ptrdiff_t m_bInHostageResetZone = 0x1230; // bool
+                constexpr std::ptrdiff_t m_bInBuyZone = 0x1231; // bool
+                constexpr std::ptrdiff_t m_TouchingBuyZones = 0x1238; // CUtlVector<CHandle<CBaseEntity>>
+                constexpr std::ptrdiff_t m_bWasInBuyZone = 0x1250; // bool
+                constexpr std::ptrdiff_t m_bInHostageRescueZone = 0x1251; // bool
+                constexpr std::ptrdiff_t m_bInBombZone = 0x1252; // bool
+                constexpr std::ptrdiff_t m_bWasInHostageRescueZone = 0x1253; // bool
+                constexpr std::ptrdiff_t m_iRetakesOffering = 0x1254; // int32
+                constexpr std::ptrdiff_t m_iRetakesOfferingCard = 0x1258; // int32
+                constexpr std::ptrdiff_t m_bRetakesHasDefuseKit = 0x125C; // bool
+                constexpr std::ptrdiff_t m_bRetakesMVPLastRound = 0x125D; // bool
+                constexpr std::ptrdiff_t m_iRetakesMVPBoostItem = 0x1260; // int32
+                constexpr std::ptrdiff_t m_RetakesMVPBoostExtraUtility = 0x1264; // loadout_slot_t
+                constexpr std::ptrdiff_t m_flHealthShotBoostExpirationTime = 0x1268; // GameTime_t
+                constexpr std::ptrdiff_t m_flLandingTimeSeconds = 0x126C; // float32
+                constexpr std::ptrdiff_t m_bIsBuyMenuOpen = 0x1270; // bool
+                constexpr std::ptrdiff_t m_lastLandTime = 0x12A8; // GameTime_t
+                constexpr std::ptrdiff_t m_bOnGroundLastTick = 0x12AC; // bool
+                constexpr std::ptrdiff_t m_iPlayerLocked = 0x12B0; // int32
+                constexpr std::ptrdiff_t m_flTimeOfLastInjury = 0x12B8; // GameTime_t
+                constexpr std::ptrdiff_t m_flNextSprayDecalTime = 0x12BC; // GameTime_t
+                constexpr std::ptrdiff_t m_bNextSprayDecalTimeExpedited = 0x12C0; // bool
+                constexpr std::ptrdiff_t m_nRagdollDamageBone = 0x12C4; // int32
+                constexpr std::ptrdiff_t m_vRagdollDamageForce = 0x12C8; // Vector
+                constexpr std::ptrdiff_t m_szRagdollDamageWeaponName = 0x12D4; // char[64]
+                constexpr std::ptrdiff_t m_bRagdollDamageHeadshot = 0x1314; // bool
+                constexpr std::ptrdiff_t m_vRagdollServerOrigin = 0x1318; // VectorWS
+                constexpr std::ptrdiff_t m_EconGloves = 0x1328; // CEconItemView
+                constexpr std::ptrdiff_t m_nEconGlovesChanged = 0x1710; // uint8
+                constexpr std::ptrdiff_t m_qDeathEyeAngles = 0x1714; // QAngle
+                constexpr std::ptrdiff_t m_bLeftHanded = 0x1720; // bool
+                constexpr std::ptrdiff_t m_fSwitchedHandednessTime = 0x1724; // GameTime_t
+                constexpr std::ptrdiff_t m_flViewmodelOffsetX = 0x1728; // float32
+                constexpr std::ptrdiff_t m_flViewmodelOffsetY = 0x172C; // float32
+                constexpr std::ptrdiff_t m_flViewmodelOffsetZ = 0x1730; // float32
+                constexpr std::ptrdiff_t m_flViewmodelFOV = 0x1734; // float32
+                constexpr std::ptrdiff_t m_bIsWalking = 0x1738; // bool
+                constexpr std::ptrdiff_t m_fLastGivenDefuserTime = 0x173C; // float32
+                constexpr std::ptrdiff_t m_fLastGivenBombTime = 0x1740; // float32
+                constexpr std::ptrdiff_t m_flDealtDamageToEnemyMostRecentTimestamp = 0x1744; // float32
+                constexpr std::ptrdiff_t m_iDisplayHistoryBits = 0x1748; // uint32
+                constexpr std::ptrdiff_t m_flLastAttackedTeammate = 0x174C; // float32
+                constexpr std::ptrdiff_t m_allowAutoFollowTime = 0x1750; // GameTime_t
+                constexpr std::ptrdiff_t m_bResetArmorNextSpawn = 0x1754; // bool
+                constexpr std::ptrdiff_t m_nLastKillerIndex = 0x1758; // CEntityIndex
+                constexpr std::ptrdiff_t m_entitySpottedState = 0x1760; // EntitySpottedState_t
+                constexpr std::ptrdiff_t m_nSpotRules = 0x1778; // int32
+                constexpr std::ptrdiff_t m_bIsScoped = 0x177C; // bool
+                constexpr std::ptrdiff_t m_bResumeZoom = 0x177D; // bool
+                constexpr std::ptrdiff_t m_bIsDefusing = 0x177E; // bool
+                constexpr std::ptrdiff_t m_bIsGrabbingHostage = 0x177F; // bool
+                constexpr std::ptrdiff_t m_iBlockingUseActionInProgress = 0x1780; // CSPlayerBlockingUseAction_t
+                constexpr std::ptrdiff_t m_flEmitSoundTime = 0x1784; // GameTime_t
+                constexpr std::ptrdiff_t m_bInNoDefuseArea = 0x1788; // bool
+                constexpr std::ptrdiff_t m_iBombSiteIndex = 0x178C; // CEntityIndex
+                constexpr std::ptrdiff_t m_nWhichBombZone = 0x1790; // int32
+                constexpr std::ptrdiff_t m_bInBombZoneTrigger = 0x1794; // bool
+                constexpr std::ptrdiff_t m_bWasInBombZoneTrigger = 0x1795; // bool
+                constexpr std::ptrdiff_t m_iShotsFired = 0x1798; // int32
+                constexpr std::ptrdiff_t m_flFlinchStack = 0x179C; // float32
+                constexpr std::ptrdiff_t m_flVelocityModifier = 0x17A0; // float32
+                constexpr std::ptrdiff_t m_vecTotalBulletForce = 0x17A4; // Vector
+                constexpr std::ptrdiff_t m_bWaitForNoAttack = 0x17B0; // bool
+                constexpr std::ptrdiff_t m_ignoreLadderJumpTime = 0x17B4; // float32
+                constexpr std::ptrdiff_t m_bKilledByHeadshot = 0x17B8; // bool
+                constexpr std::ptrdiff_t m_LastHitBox = 0x17BC; // int32
+                constexpr std::ptrdiff_t m_pBot = 0x17C0; // CCSBot*
+                constexpr std::ptrdiff_t m_bBotAllowActive = 0x17C8; // bool
+                constexpr std::ptrdiff_t m_nLastPickupPriority = 0x17CC; // int32
+                constexpr std::ptrdiff_t m_flLastPickupPriorityTime = 0x17D0; // float32
+                constexpr std::ptrdiff_t m_ArmorValue = 0x17D4; // int32
+                constexpr std::ptrdiff_t m_unCurrentEquipmentValue = 0x17D8; // uint16
+                constexpr std::ptrdiff_t m_unRoundStartEquipmentValue = 0x17DA; // uint16
+                constexpr std::ptrdiff_t m_unFreezetimeEndEquipmentValue = 0x17DC; // uint16
+                constexpr std::ptrdiff_t m_iLastWeaponFireUsercmd = 0x17E0; // int32
+                constexpr std::ptrdiff_t m_bIsSpawning = 0x17E4; // bool
+                constexpr std::ptrdiff_t m_iDeathFlags = 0x17F0; // int32
+                constexpr std::ptrdiff_t m_bHasDeathInfo = 0x17F4; // bool
+                constexpr std::ptrdiff_t m_flDeathInfoTime = 0x17F8; // float32
+                constexpr std::ptrdiff_t m_vecDeathInfoOrigin = 0x17FC; // VectorWS
+                constexpr std::ptrdiff_t m_vecPlayerPatchEconIndices = 0x1808; // uint32[5]
+                constexpr std::ptrdiff_t m_GunGameImmunityColor = 0x181C; // Color
+                constexpr std::ptrdiff_t m_grenadeParameterStashTime = 0x1820; // GameTime_t
+                constexpr std::ptrdiff_t m_bGrenadeParametersStashed = 0x1824; // bool
+                constexpr std::ptrdiff_t m_angStashedShootAngles = 0x1828; // QAngle
+                constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPosition = 0x1834; // VectorWS
+                constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPawnCenter = 0x1840; // VectorWS
+                constexpr std::ptrdiff_t m_vecStashedVelocity = 0x184C; // Vector
+                constexpr std::ptrdiff_t m_bCommittingSuicideOnTeamChange = 0x1860; // bool
+                constexpr std::ptrdiff_t m_wasNotKilledNaturally = 0x1861; // bool
+                constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x1864; // GameTime_t
+                constexpr std::ptrdiff_t m_bGunGameImmunity = 0x1868; // bool
+                constexpr std::ptrdiff_t m_flModifier0 = 0x186C; // float32
+                constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x1870; // float32
+                constexpr std::ptrdiff_t m_angEyeAngles = 0x1874; // QAngle
             }
             // Parent: CBaseEntity
             // Field count: 20

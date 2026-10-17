@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-06 19:38:53.279116825 UTC
+// 2026-10-15 15:40:22.041023216 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -7,7 +7,7 @@ pub mod cs2_dumper {
     pub mod schemas {
         // Module: libserver.so
         // Class count: 969
-        // Enum count: 244
+        // Enum count: 243
         pub mod libserver_so {
             // Alignment: 4
             // Member count: 4
@@ -1307,7 +1307,7 @@ pub mod cs2_dumper {
                 k_EGCMsgLookupAccountFromInput = 0x42,
                 k_EGCMsgSendHTTPRequest = 0x43,
                 k_EGCMsgSendHTTPRequestResponse = 0x44,
-                k_EGCMsgPreTestSetup = 0x45,
+                k_EGCMsgPreTestSetup_DEPRECATED = 0x45,
                 k_EGCMsgRecordSupportAction = 0x46,
                 k_EGCMsgGetAccountDetails_DEPRECATED = 0x47,
                 k_EGCMsgReceiveInterAppMessage = 0x49,
@@ -1606,17 +1606,6 @@ pub mod cs2_dumper {
                 HULL_SMALL = 0x9,
                 NUM_HULLS = 0xA,
                 HULL_NONE = 0xB
-            }
-            // Alignment: 4
-            // Member count: 6
-            #[repr(u32)]
-            pub enum EUnlockStyle {
-                k_UnlockStyle_Succeeded = 0x0,
-                k_UnlockStyle_Failed_PreReq = 0x1,
-                k_UnlockStyle_Failed_CantAfford = 0x2,
-                k_UnlockStyle_Failed_CantCommit = 0x3,
-                k_UnlockStyle_Failed_CantLockCache = 0x4,
-                k_UnlockStyle_Failed_CantAffordAttrib = 0x5
             }
             // Alignment: 1
             // Member count: 3
@@ -3107,15 +3096,15 @@ pub mod cs2_dumper {
                 k_EMsgGCCraft = 0x3EA,
                 k_EMsgGCCraftResponse = 0x3EB,
                 k_EMsgGCDelete = 0x3EC,
-                k_EMsgGCVerifyCacheSubscription = 0x3ED,
+                k_EMsgGCVerifyCacheSubscription_DEPRECATED = 0x3ED,
                 k_EMsgGCNameItem = 0x3EE,
                 k_EMsgGCUnlockCrate_DEPRECATED = 0x3EF,
                 k_EMsgGCUnlockCrateResponse = 0x3F0,
-                k_EMsgGCPaintItem = 0x3F1,
-                k_EMsgGCPaintItemResponse = 0x3F2,
-                k_EMsgGCGoldenWrenchBroadcast = 0x3F3,
-                k_EMsgGCMOTDRequest = 0x3F4,
-                k_EMsgGCMOTDRequestResponse = 0x3F5,
+                k_EMsgGCPaintItem_DEPRECATED = 0x3F1,
+                k_EMsgGCPaintItemResponse_DEPRECATED = 0x3F2,
+                k_EMsgGCGoldenWrenchBroadcast_DEPRECATED = 0x3F3,
+                k_EMsgGCMOTDRequest_DEPRECATED = 0x3F4,
+                k_EMsgGCMOTDRequestResponse_DEPRECATED = 0x3F5,
                 k_EMsgGCAddItemToSocket_DEPRECATED = 0x3F6,
                 k_EMsgGCAddItemToSocketResponse_DEPRECATED = 0x3F7,
                 k_EMsgGCAddSocketToBaseItem_DEPRECATED = 0x3F8,
@@ -3125,59 +3114,59 @@ pub mod cs2_dumper {
                 k_EMsgGCNameBaseItemResponse = 0x3FC,
                 k_EMsgGCRemoveSocketItem_DEPRECATED = 0x3FD,
                 k_EMsgGCRemoveSocketItemResponse_DEPRECATED = 0x3FE,
-                k_EMsgGCCustomizeItemTexture = 0x3FF,
-                k_EMsgGCCustomizeItemTextureResponse = 0x400,
+                k_EMsgGCCustomizeItemTexture_DEPRECATED = 0x3FF,
+                k_EMsgGCCustomizeItemTextureResponse_DEPRECATED = 0x400,
                 k_EMsgGCUseItemRequest = 0x401,
                 k_EMsgGCUseItemResponse = 0x402,
                 k_EMsgGCGiftedItems_DEPRECATED = 0x403,
                 k_EMsgGCRemoveItemName = 0x406,
-                k_EMsgGCRemoveItemPaint = 0x407,
-                k_EMsgGCGiftWrapItem = 0x408,
-                k_EMsgGCGiftWrapItemResponse = 0x409,
-                k_EMsgGCDeliverGift = 0x40A,
-                k_EMsgGCDeliverGiftResponseGiver = 0x40B,
-                k_EMsgGCDeliverGiftResponseReceiver = 0x40C,
-                k_EMsgGCUnwrapGiftRequest = 0x40D,
-                k_EMsgGCUnwrapGiftResponse = 0x40E,
-                k_EMsgGCSetItemStyle = 0x40F,
-                k_EMsgGCUsedClaimCodeItem = 0x410,
+                k_EMsgGCRemoveItemPaint_DEPRECATED = 0x407,
+                k_EMsgGCGiftWrapItem_DEPRECATED = 0x408,
+                k_EMsgGCGiftWrapItemResponse_DEPRECATED = 0x409,
+                k_EMsgGCDeliverGift_DEPRECATED = 0x40A,
+                k_EMsgGCDeliverGiftResponseGiver_DEPRECATED = 0x40B,
+                k_EMsgGCDeliverGiftResponseReceiver_DEPRECATED = 0x40C,
+                k_EMsgGCUnwrapGiftRequest_DEPRECATED = 0x40D,
+                k_EMsgGCUnwrapGiftResponse_DEPRECATED = 0x40E,
+                k_EMsgGCSetItemStyle_DEPRECATED = 0x40F,
+                k_EMsgGCUsedClaimCodeItem_DEPRECATED = 0x410,
                 k_EMsgGCSortItems = 0x411,
                 k_EMsgGC_RevolvingLootList_DEPRECATED = 0x412,
-                k_EMsgGCLookupAccount = 0x413,
-                k_EMsgGCLookupAccountResponse = 0x414,
-                k_EMsgGCLookupAccountName = 0x415,
-                k_EMsgGCLookupAccountNameResponse = 0x416,
+                k_EMsgGCLookupAccount_DEPRECATED = 0x413,
+                k_EMsgGCLookupAccountResponse_DEPRECATED = 0x414,
+                k_EMsgGCLookupAccountName_DEPRECATED = 0x415,
+                k_EMsgGCLookupAccountNameResponse_DEPRECATED = 0x416,
                 k_EMsgGCUpdateItemSchema = 0x419,
-                k_EMsgGCRemoveCustomTexture = 0x41B,
-                k_EMsgGCRemoveCustomTextureResponse = 0x41C,
-                k_EMsgGCRemoveMakersMark = 0x41D,
-                k_EMsgGCRemoveMakersMarkResponse = 0x41E,
-                k_EMsgGCRemoveUniqueCraftIndex = 0x41F,
-                k_EMsgGCRemoveUniqueCraftIndexResponse = 0x420,
+                k_EMsgGCRemoveCustomTexture_DEPRECATED = 0x41B,
+                k_EMsgGCRemoveCustomTextureResponse_DEPRECATED = 0x41C,
+                k_EMsgGCRemoveMakersMark_DEPRECATED = 0x41D,
+                k_EMsgGCRemoveMakersMarkResponse_DEPRECATED = 0x41E,
+                k_EMsgGCRemoveUniqueCraftIndex_DEPRECATED = 0x41F,
+                k_EMsgGCRemoveUniqueCraftIndexResponse_DEPRECATED = 0x420,
                 k_EMsgGCSaxxyBroadcast = 0x421,
                 k_EMsgGCBackpackSortFinished = 0x422,
-                k_EMsgGCCollectItem = 0x425,
+                k_EMsgGCCollectItem_DEPRECATED = 0x425,
                 k_EMsgGCItemAcknowledged__DEPRECATED = 0x426,
                 k_EMsgGC_ReportAbuse = 0x429,
                 k_EMsgGC_ReportAbuseResponse = 0x42A,
                 k_EMsgGCNameItemNotification = 0x42C,
-                k_EMsgGCApplyConsumableEffects = 0x42D,
+                k_EMsgGCApplyConsumableEffects_DEPRECATED = 0x42D,
                 k_EMsgGCConsumableExhausted = 0x42E,
                 k_EMsgGCShowItemsPickedUp = 0x42F,
-                k_EMsgGCClientDisplayNotification = 0x430,
-                k_EMsgGCApplyStrangePart = 0x431,
+                k_EMsgGCClientDisplayNotification_DEPRECATED = 0x430,
+                k_EMsgGCApplyStrangePart_DEPRECATED = 0x431,
                 k_EMsgGC_IncrementKillCountAttribute = 0x432,
                 k_EMsgGC_IncrementKillCountResponse = 0x433,
-                k_EMsgGCApplyPennantUpgrade = 0x434,
+                k_EMsgGCApplyPennantUpgrade_DEPRECATED = 0x434,
                 k_EMsgGCSetItemPositions = 0x435,
-                k_EMsgGCApplyEggEssence = 0x436,
-                k_EMsgGCNameEggEssenceResponse = 0x437,
-                k_EMsgGCPaintKitItem = 0x438,
-                k_EMsgGCPaintKitBaseItem = 0x439,
-                k_EMsgGCPaintKitItemResponse = 0x43A,
+                k_EMsgGCApplyEggEssence_DEPRECATED = 0x436,
+                k_EMsgGCNameEggEssenceResponse_DEPRECATED = 0x437,
+                k_EMsgGCPaintKitItem_DEPRECATED = 0x438,
+                k_EMsgGCPaintKitBaseItem_DEPRECATED = 0x439,
+                k_EMsgGCPaintKitItemResponse_DEPRECATED = 0x43A,
                 k_EMsgGCGiftedItems = 0x43B,
-                k_EMsgGCUnlockItemStyle = 0x43C,
-                k_EMsgGCUnlockItemStyleResponse = 0x43D,
+                k_EMsgGCUnlockItemStyle_DEPRECATED = 0x43C,
+                k_EMsgGCUnlockItemStyleResponse_DEPRECATED = 0x43D,
                 k_EMsgGCApplySticker = 0x43E,
                 k_EMsgGCItemAcknowledged = 0x43F,
                 k_EMsgGCStatTrakSwap = 0x440,
@@ -3187,19 +3176,19 @@ pub mod cs2_dumper {
                 k_EMsgGCCasketItemAdd = 0x444,
                 k_EMsgGCCasketItemExtract = 0x445,
                 k_EMsgGCCasketItemLoadContents = 0x446,
-                k_EMsgGCServerBrowser_FavoriteServer = 0x641,
-                k_EMsgGCServerBrowser_BlacklistServer = 0x642,
-                k_EMsgGCServerRentalsBase = 0x6A4,
-                k_EMsgGCItemPreviewCheckStatus = 0x6A5,
-                k_EMsgGCItemPreviewStatusResponse = 0x6A6,
-                k_EMsgGCItemPreviewRequest = 0x6A7,
-                k_EMsgGCItemPreviewRequestResponse = 0x6A8,
-                k_EMsgGCItemPreviewExpire = 0x6A9,
-                k_EMsgGCItemPreviewExpireNotification = 0x6AA,
-                k_EMsgGCItemPreviewItemBoughtNotification = 0x6AB,
+                k_EMsgGCServerBrowser_FavoriteServer_DEPRECATED = 0x641,
+                k_EMsgGCServerBrowser_BlacklistServer_DEPRECATED = 0x642,
+                k_EMsgGCServerRentalsBase_DEPRECATED = 0x6A4,
+                k_EMsgGCItemPreviewCheckStatus_DEPRECATED = 0x6A5,
+                k_EMsgGCItemPreviewStatusResponse_DEPRECATED = 0x6A6,
+                k_EMsgGCItemPreviewRequest_DEPRECATED = 0x6A7,
+                k_EMsgGCItemPreviewRequestResponse_DEPRECATED = 0x6A8,
+                k_EMsgGCItemPreviewExpire_DEPRECATED = 0x6A9,
+                k_EMsgGCItemPreviewExpireNotification_DEPRECATED = 0x6AA,
+                k_EMsgGCItemPreviewItemBoughtNotification_DEPRECATED = 0x6AB,
                 k_EMsgGCDev_NewItemRequest = 0x7D1,
                 k_EMsgGCDev_NewItemRequestResponse = 0x7D2,
-                k_EMsgGCDev_PaintKitDropItem = 0x7D3,
+                k_EMsgGCDev_PaintKitDropItem_DEPRECATED = 0x7D3,
                 k_EMsgGCDev_SchemaReservationRequest = 0x7D4,
                 k_EMsgGCStoreGetUserData = 0x9C4,
                 k_EMsgGCStoreGetUserDataResponse = 0x9C5,
@@ -3209,8 +3198,8 @@ pub mod cs2_dumper {
                 k_EMsgGCStorePurchaseFinalizeResponse = 0x9C9,
                 k_EMsgGCStorePurchaseCancel = 0x9CA,
                 k_EMsgGCStorePurchaseCancelResponse = 0x9CB,
-                k_EMsgGCStorePurchaseQueryTxn = 0x9CC,
-                k_EMsgGCStorePurchaseQueryTxnResponse = 0x9CD,
+                k_EMsgGCStorePurchaseQueryTxn_DEPRECATED = 0x9CC,
+                k_EMsgGCStorePurchaseQueryTxnResponse_DEPRECATED = 0x9CD,
                 k_EMsgGCStorePurchaseInit = 0x9CE,
                 k_EMsgGCStorePurchaseInitResponse = 0x9CF,
                 k_EMsgGCBannedWordListRequest = 0x9D0,
@@ -4143,7 +4132,7 @@ pub mod cs2_dumper {
             // Parent: CBaseTrigger
             // Field count: 1
             pub mod CCSMinimapVolume {
-                pub const m_strMinimapName: usize = 0xCA0; // CUtlString
+                pub const m_strMinimapName: usize = 0xCB8; // CUtlString
             }
             // Parent: CBaseTrigger
             // Field count: 2
@@ -5954,115 +5943,114 @@ pub mod cs2_dumper {
                 pub const m_WaitComplete: usize = 0xE0; // CPulse_ResumePoint
             }
             // Parent: CCSPlayerPawnBase
-            // Field count: 107
+            // Field count: 106
             pub mod CCSPlayerPawn {
-                pub const m_pBulletServices: usize = 0x10F0; // CCSPlayer_BulletServices*
-                pub const m_pHostageServices: usize = 0x10F8; // CCSPlayer_HostageServices*
-                pub const m_pBuyServices: usize = 0x1100; // CCSPlayer_BuyServices*
-                pub const m_pActionTrackingServices: usize = 0x1108; // CCSPlayer_ActionTrackingServices*
-                pub const m_pAimPunchServices: usize = 0x1110; // CCSPlayer_AimPunchServices*
-                pub const m_pRadioServices: usize = 0x1118; // CCSPlayer_RadioServices*
-                pub const m_pDamageReactServices: usize = 0x1120; // CCSPlayer_DamageReactServices*
-                pub const m_nCharacterDefIndex: usize = 0x1128; // uint16
-                pub const m_bHasFemaleVoice: usize = 0x112A; // bool
-                pub const m_strVOPrefix: usize = 0x1130; // CUtlString
-                pub const m_szLastPlaceName: usize = 0x1138; // char[18]
-                pub const m_bInHostageResetZone: usize = 0x1228; // bool
-                pub const m_bInBuyZone: usize = 0x1229; // bool
-                pub const m_TouchingBuyZones: usize = 0x1230; // CUtlVector<CHandle<CBaseEntity>>
-                pub const m_bWasInBuyZone: usize = 0x1248; // bool
-                pub const m_bInHostageRescueZone: usize = 0x1249; // bool
-                pub const m_bInBombZone: usize = 0x124A; // bool
-                pub const m_bWasInHostageRescueZone: usize = 0x124B; // bool
-                pub const m_iRetakesOffering: usize = 0x124C; // int32
-                pub const m_iRetakesOfferingCard: usize = 0x1250; // int32
-                pub const m_bRetakesHasDefuseKit: usize = 0x1254; // bool
-                pub const m_bRetakesMVPLastRound: usize = 0x1255; // bool
-                pub const m_iRetakesMVPBoostItem: usize = 0x1258; // int32
-                pub const m_RetakesMVPBoostExtraUtility: usize = 0x125C; // loadout_slot_t
-                pub const m_flHealthShotBoostExpirationTime: usize = 0x1260; // GameTime_t
-                pub const m_flLandingTimeSeconds: usize = 0x1264; // float32
-                pub const m_bIsBuyMenuOpen: usize = 0x1268; // bool
-                pub const m_lastLandTime: usize = 0x12A0; // GameTime_t
-                pub const m_bOnGroundLastTick: usize = 0x12A4; // bool
-                pub const m_iPlayerLocked: usize = 0x12A8; // int32
-                pub const m_flTimeOfLastInjury: usize = 0x12B0; // GameTime_t
-                pub const m_flNextSprayDecalTime: usize = 0x12B4; // GameTime_t
-                pub const m_bNextSprayDecalTimeExpedited: usize = 0x12B8; // bool
-                pub const m_nRagdollDamageBone: usize = 0x12BC; // int32
-                pub const m_vRagdollDamageForce: usize = 0x12C0; // Vector
-                pub const m_szRagdollDamageWeaponName: usize = 0x12CC; // char[64]
-                pub const m_bRagdollDamageHeadshot: usize = 0x130C; // bool
-                pub const m_vRagdollServerOrigin: usize = 0x1310; // VectorWS
-                pub const m_EconGloves: usize = 0x1320; // CEconItemView
-                pub const m_nEconGlovesChanged: usize = 0x1708; // uint8
-                pub const m_vecCurrentMinimapVolumes: usize = 0x1710; // CUtlVector<CHandle<CCSMinimapVolume>>
-                pub const m_hActiveMinimapVolume: usize = 0x1728; // CHandle<CCSMinimapVolume>
-                pub const m_qDeathEyeAngles: usize = 0x172C; // QAngle
-                pub const m_bLeftHanded: usize = 0x1738; // bool
-                pub const m_fSwitchedHandednessTime: usize = 0x173C; // GameTime_t
-                pub const m_flViewmodelOffsetX: usize = 0x1740; // float32
-                pub const m_flViewmodelOffsetY: usize = 0x1744; // float32
-                pub const m_flViewmodelOffsetZ: usize = 0x1748; // float32
-                pub const m_flViewmodelFOV: usize = 0x174C; // float32
-                pub const m_bIsWalking: usize = 0x1750; // bool
-                pub const m_fLastGivenDefuserTime: usize = 0x1754; // float32
-                pub const m_fLastGivenBombTime: usize = 0x1758; // float32
-                pub const m_flDealtDamageToEnemyMostRecentTimestamp: usize = 0x175C; // float32
-                pub const m_iDisplayHistoryBits: usize = 0x1760; // uint32
-                pub const m_flLastAttackedTeammate: usize = 0x1764; // float32
-                pub const m_allowAutoFollowTime: usize = 0x1768; // GameTime_t
-                pub const m_bResetArmorNextSpawn: usize = 0x176C; // bool
-                pub const m_nLastKillerIndex: usize = 0x1770; // CEntityIndex
-                pub const m_entitySpottedState: usize = 0x1778; // EntitySpottedState_t
-                pub const m_nSpotRules: usize = 0x1790; // int32
-                pub const m_bIsScoped: usize = 0x1794; // bool
-                pub const m_bResumeZoom: usize = 0x1795; // bool
-                pub const m_bIsDefusing: usize = 0x1796; // bool
-                pub const m_bIsGrabbingHostage: usize = 0x1797; // bool
-                pub const m_iBlockingUseActionInProgress: usize = 0x1798; // CSPlayerBlockingUseAction_t
-                pub const m_flEmitSoundTime: usize = 0x179C; // GameTime_t
-                pub const m_bInNoDefuseArea: usize = 0x17A0; // bool
-                pub const m_iBombSiteIndex: usize = 0x17A4; // CEntityIndex
-                pub const m_nWhichBombZone: usize = 0x17A8; // int32
-                pub const m_bInBombZoneTrigger: usize = 0x17AC; // bool
-                pub const m_bWasInBombZoneTrigger: usize = 0x17AD; // bool
-                pub const m_iShotsFired: usize = 0x17B0; // int32
-                pub const m_flFlinchStack: usize = 0x17B4; // float32
-                pub const m_flVelocityModifier: usize = 0x17B8; // float32
-                pub const m_vecTotalBulletForce: usize = 0x17BC; // Vector
-                pub const m_bWaitForNoAttack: usize = 0x17C8; // bool
-                pub const m_ignoreLadderJumpTime: usize = 0x17CC; // float32
-                pub const m_bKilledByHeadshot: usize = 0x17D0; // bool
-                pub const m_LastHitBox: usize = 0x17D4; // int32
-                pub const m_pBot: usize = 0x17D8; // CCSBot*
-                pub const m_bBotAllowActive: usize = 0x17E0; // bool
-                pub const m_nLastPickupPriority: usize = 0x17E4; // int32
-                pub const m_flLastPickupPriorityTime: usize = 0x17E8; // float32
-                pub const m_ArmorValue: usize = 0x17EC; // int32
-                pub const m_unCurrentEquipmentValue: usize = 0x17F0; // uint16
-                pub const m_unRoundStartEquipmentValue: usize = 0x17F2; // uint16
-                pub const m_unFreezetimeEndEquipmentValue: usize = 0x17F4; // uint16
-                pub const m_iLastWeaponFireUsercmd: usize = 0x17F8; // int32
-                pub const m_bIsSpawning: usize = 0x17FC; // bool
-                pub const m_iDeathFlags: usize = 0x1808; // int32
-                pub const m_bHasDeathInfo: usize = 0x180C; // bool
-                pub const m_flDeathInfoTime: usize = 0x1810; // float32
-                pub const m_vecDeathInfoOrigin: usize = 0x1814; // VectorWS
-                pub const m_vecPlayerPatchEconIndices: usize = 0x1820; // uint32[5]
-                pub const m_GunGameImmunityColor: usize = 0x1834; // Color
-                pub const m_grenadeParameterStashTime: usize = 0x1838; // GameTime_t
-                pub const m_bGrenadeParametersStashed: usize = 0x183C; // bool
-                pub const m_angStashedShootAngles: usize = 0x1840; // QAngle
-                pub const m_vecStashedGrenadeThrowPosition: usize = 0x184C; // VectorWS
-                pub const m_vecStashedGrenadeThrowPawnCenter: usize = 0x1858; // VectorWS
-                pub const m_vecStashedVelocity: usize = 0x1864; // Vector
-                pub const m_bCommittingSuicideOnTeamChange: usize = 0x1878; // bool
-                pub const m_wasNotKilledNaturally: usize = 0x1879; // bool
-                pub const m_fImmuneToGunGameDamageTime: usize = 0x187C; // GameTime_t
-                pub const m_bGunGameImmunity: usize = 0x1880; // bool
-                pub const m_fMolotovDamageTime: usize = 0x1884; // float32
-                pub const m_angEyeAngles: usize = 0x1888; // QAngle
+                pub const m_pBulletServices: usize = 0x10F8; // CCSPlayer_BulletServices*
+                pub const m_pHostageServices: usize = 0x1100; // CCSPlayer_HostageServices*
+                pub const m_pBuyServices: usize = 0x1108; // CCSPlayer_BuyServices*
+                pub const m_pActionTrackingServices: usize = 0x1110; // CCSPlayer_ActionTrackingServices*
+                pub const m_pAimPunchServices: usize = 0x1118; // CCSPlayer_AimPunchServices*
+                pub const m_pRadioServices: usize = 0x1120; // CCSPlayer_RadioServices*
+                pub const m_pDamageReactServices: usize = 0x1128; // CCSPlayer_DamageReactServices*
+                pub const m_nCharacterDefIndex: usize = 0x1130; // uint16
+                pub const m_bHasFemaleVoice: usize = 0x1132; // bool
+                pub const m_strVOPrefix: usize = 0x1138; // CUtlString
+                pub const m_szLastPlaceName: usize = 0x1140; // char[18]
+                pub const m_bInHostageResetZone: usize = 0x1230; // bool
+                pub const m_bInBuyZone: usize = 0x1231; // bool
+                pub const m_TouchingBuyZones: usize = 0x1238; // CUtlVector<CHandle<CBaseEntity>>
+                pub const m_bWasInBuyZone: usize = 0x1250; // bool
+                pub const m_bInHostageRescueZone: usize = 0x1251; // bool
+                pub const m_bInBombZone: usize = 0x1252; // bool
+                pub const m_bWasInHostageRescueZone: usize = 0x1253; // bool
+                pub const m_iRetakesOffering: usize = 0x1254; // int32
+                pub const m_iRetakesOfferingCard: usize = 0x1258; // int32
+                pub const m_bRetakesHasDefuseKit: usize = 0x125C; // bool
+                pub const m_bRetakesMVPLastRound: usize = 0x125D; // bool
+                pub const m_iRetakesMVPBoostItem: usize = 0x1260; // int32
+                pub const m_RetakesMVPBoostExtraUtility: usize = 0x1264; // loadout_slot_t
+                pub const m_flHealthShotBoostExpirationTime: usize = 0x1268; // GameTime_t
+                pub const m_flLandingTimeSeconds: usize = 0x126C; // float32
+                pub const m_bIsBuyMenuOpen: usize = 0x1270; // bool
+                pub const m_lastLandTime: usize = 0x12A8; // GameTime_t
+                pub const m_bOnGroundLastTick: usize = 0x12AC; // bool
+                pub const m_iPlayerLocked: usize = 0x12B0; // int32
+                pub const m_flTimeOfLastInjury: usize = 0x12B8; // GameTime_t
+                pub const m_flNextSprayDecalTime: usize = 0x12BC; // GameTime_t
+                pub const m_bNextSprayDecalTimeExpedited: usize = 0x12C0; // bool
+                pub const m_nRagdollDamageBone: usize = 0x12C4; // int32
+                pub const m_vRagdollDamageForce: usize = 0x12C8; // Vector
+                pub const m_szRagdollDamageWeaponName: usize = 0x12D4; // char[64]
+                pub const m_bRagdollDamageHeadshot: usize = 0x1314; // bool
+                pub const m_vRagdollServerOrigin: usize = 0x1318; // VectorWS
+                pub const m_EconGloves: usize = 0x1328; // CEconItemView
+                pub const m_nEconGlovesChanged: usize = 0x1710; // uint8
+                pub const m_qDeathEyeAngles: usize = 0x1714; // QAngle
+                pub const m_bLeftHanded: usize = 0x1720; // bool
+                pub const m_fSwitchedHandednessTime: usize = 0x1724; // GameTime_t
+                pub const m_flViewmodelOffsetX: usize = 0x1728; // float32
+                pub const m_flViewmodelOffsetY: usize = 0x172C; // float32
+                pub const m_flViewmodelOffsetZ: usize = 0x1730; // float32
+                pub const m_flViewmodelFOV: usize = 0x1734; // float32
+                pub const m_bIsWalking: usize = 0x1738; // bool
+                pub const m_fLastGivenDefuserTime: usize = 0x173C; // float32
+                pub const m_fLastGivenBombTime: usize = 0x1740; // float32
+                pub const m_flDealtDamageToEnemyMostRecentTimestamp: usize = 0x1744; // float32
+                pub const m_iDisplayHistoryBits: usize = 0x1748; // uint32
+                pub const m_flLastAttackedTeammate: usize = 0x174C; // float32
+                pub const m_allowAutoFollowTime: usize = 0x1750; // GameTime_t
+                pub const m_bResetArmorNextSpawn: usize = 0x1754; // bool
+                pub const m_nLastKillerIndex: usize = 0x1758; // CEntityIndex
+                pub const m_entitySpottedState: usize = 0x1760; // EntitySpottedState_t
+                pub const m_nSpotRules: usize = 0x1778; // int32
+                pub const m_bIsScoped: usize = 0x177C; // bool
+                pub const m_bResumeZoom: usize = 0x177D; // bool
+                pub const m_bIsDefusing: usize = 0x177E; // bool
+                pub const m_bIsGrabbingHostage: usize = 0x177F; // bool
+                pub const m_iBlockingUseActionInProgress: usize = 0x1780; // CSPlayerBlockingUseAction_t
+                pub const m_flEmitSoundTime: usize = 0x1784; // GameTime_t
+                pub const m_bInNoDefuseArea: usize = 0x1788; // bool
+                pub const m_iBombSiteIndex: usize = 0x178C; // CEntityIndex
+                pub const m_nWhichBombZone: usize = 0x1790; // int32
+                pub const m_bInBombZoneTrigger: usize = 0x1794; // bool
+                pub const m_bWasInBombZoneTrigger: usize = 0x1795; // bool
+                pub const m_iShotsFired: usize = 0x1798; // int32
+                pub const m_flFlinchStack: usize = 0x179C; // float32
+                pub const m_flVelocityModifier: usize = 0x17A0; // float32
+                pub const m_vecTotalBulletForce: usize = 0x17A4; // Vector
+                pub const m_bWaitForNoAttack: usize = 0x17B0; // bool
+                pub const m_ignoreLadderJumpTime: usize = 0x17B4; // float32
+                pub const m_bKilledByHeadshot: usize = 0x17B8; // bool
+                pub const m_LastHitBox: usize = 0x17BC; // int32
+                pub const m_pBot: usize = 0x17C0; // CCSBot*
+                pub const m_bBotAllowActive: usize = 0x17C8; // bool
+                pub const m_nLastPickupPriority: usize = 0x17CC; // int32
+                pub const m_flLastPickupPriorityTime: usize = 0x17D0; // float32
+                pub const m_ArmorValue: usize = 0x17D4; // int32
+                pub const m_unCurrentEquipmentValue: usize = 0x17D8; // uint16
+                pub const m_unRoundStartEquipmentValue: usize = 0x17DA; // uint16
+                pub const m_unFreezetimeEndEquipmentValue: usize = 0x17DC; // uint16
+                pub const m_iLastWeaponFireUsercmd: usize = 0x17E0; // int32
+                pub const m_bIsSpawning: usize = 0x17E4; // bool
+                pub const m_iDeathFlags: usize = 0x17F0; // int32
+                pub const m_bHasDeathInfo: usize = 0x17F4; // bool
+                pub const m_flDeathInfoTime: usize = 0x17F8; // float32
+                pub const m_vecDeathInfoOrigin: usize = 0x17FC; // VectorWS
+                pub const m_vecPlayerPatchEconIndices: usize = 0x1808; // uint32[5]
+                pub const m_GunGameImmunityColor: usize = 0x181C; // Color
+                pub const m_grenadeParameterStashTime: usize = 0x1820; // GameTime_t
+                pub const m_bGrenadeParametersStashed: usize = 0x1824; // bool
+                pub const m_angStashedShootAngles: usize = 0x1828; // QAngle
+                pub const m_vecStashedGrenadeThrowPosition: usize = 0x1834; // VectorWS
+                pub const m_vecStashedGrenadeThrowPawnCenter: usize = 0x1840; // VectorWS
+                pub const m_vecStashedVelocity: usize = 0x184C; // Vector
+                pub const m_bCommittingSuicideOnTeamChange: usize = 0x1860; // bool
+                pub const m_wasNotKilledNaturally: usize = 0x1861; // bool
+                pub const m_fImmuneToGunGameDamageTime: usize = 0x1864; // GameTime_t
+                pub const m_bGunGameImmunity: usize = 0x1868; // bool
+                pub const m_flModifier0: usize = 0x186C; // float32
+                pub const m_fMolotovDamageTime: usize = 0x1870; // float32
+                pub const m_angEyeAngles: usize = 0x1874; // QAngle
             }
             // Parent: CBaseEntity
             // Field count: 20

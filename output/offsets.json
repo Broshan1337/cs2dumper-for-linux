@@ -1,24 +1,24 @@
 {
   "libclient.so": {
-    "dwCSGOInput": 76880576,
-    "dwEntityList": 74181376,
-    "dwGameEntitySystem": 79237200,
+    "dwCSGOInput": 76898240,
+    "dwEntityList": 74199040,
+    "dwGameEntitySystem": 79255056,
     "dwGameEntitySystem_highestEntityIndex": 8480,
-    "dwGameRules": 76786672,
-    "dwGlobalVars": 73939032,
-    "dwGlowManager": 76763736,
-    "dwLocalPlayerController": 76562200,
-    "dwLocalPlayerPawn": 76791768,
-    "dwPlantedC4": 75244232,
-    "dwPrediction": 76791440,
-    "dwSensitivity": 76783864,
+    "dwGameRules": 76804336,
+    "dwGlobalVars": 73956664,
+    "dwGlowManager": 76781496,
+    "dwLocalPlayerController": 76579768,
+    "dwLocalPlayerPawn": 76809432,
+    "dwPlantedC4": 75261896,
+    "dwPrediction": 76809104,
+    "dwSensitivity": 76801528,
     "dwSensitivity_sensitivity": 88,
-    "dwViewMatrix": 76822016,
-    "dwViewRender": 76822288
+    "dwViewMatrix": 76839680,
+    "dwViewRender": 76839952
   },
   "libengine2.so": {
-    "dwBuildNumber": 10445052,
-    "dwNetworkGameClient": 10778560,
+    "dwBuildNumber": 10445564,
+    "dwNetworkGameClient": 10779072,
     "dwNetworkGameClient_clientTickCount": 936,
     "dwNetworkGameClient_deltaTick": 940,
     "dwNetworkGameClient_isBackgroundMap": 648,
@@ -26,8 +26,8 @@
     "dwNetworkGameClient_maxClients": 576,
     "dwNetworkGameClient_serverTickCount": 604,
     "dwNetworkGameClient_signOnState": 644,
-    "dwWindowHeight": 10490212,
-    "dwWindowWidth": 10490208
+    "dwWindowHeight": 10490724,
+    "dwWindowWidth": 10490720
   },
   "libinputsystem.so": {
     "dwInputSystem": 523424

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-06 19:38:53.279116825 UTC
+// 2026-10-15 15:40:22.041023216 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: libanimationsystem.so
@@ -9,51 +9,51 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint ClientToolsInfo_001 = 0x18ED3E0;
-        public const nint EmptyWorldService001_Client = 0x13D9FB0;
-        public const nint GameClientExports001 = 0x18ECC80;
-        public const nint LegacyGameUI001 = 0x1B89080;
-        public const nint Source2Client002 = 0x18ECD40;
-        public const nint Source2ClientConfig001 = 0x1384D40;
-        public const nint Source2ClientPrediction001 = 0x1970BD0;
-        public const nint Source2ClientUI001 = 0x1AC78F0;
+        public const nint ClientToolsInfo_001 = 0x18EEFD0;
+        public const nint EmptyWorldService001_Client = 0x13D98F0;
+        public const nint GameClientExports001 = 0x18EE840;
+        public const nint LegacyGameUI001 = 0x1B8E3C0;
+        public const nint Source2Client002 = 0x18EE900;
+        public const nint Source2ClientConfig001 = 0x1384680;
+        public const nint Source2ClientPrediction001 = 0x1972A10;
+        public const nint Source2ClientUI001 = 0x1AC98F0;
     }
     // Module: libengine2.so
     public static class Libengine2So {
-        public const nint BenchmarkService001 = 0x3CDC10;
-        public const nint BugBugService001 = 0x3C8500;
-        public const nint BugService001 = 0x3C8490;
-        public const nint ClientServerEngineLoopService_001 = 0x384190;
-        public const nint ClientServerSharedHandleSystem001 = 0x34C250;
-        public const nint EngineGameUI001 = 0x5E6530;
-        public const nint EngineServiceMgr001 = 0x36FE00;
-        public const nint GameEventSystemClientV001 = 0x375FF0;
-        public const nint GameEventSystemServerV001 = 0x376000;
-        public const nint GameResourceServiceClientV001 = 0x3CFDF0;
-        public const nint GameResourceServiceServerV001 = 0x3CFE00;
-        public const nint GameUIService_001 = 0x3DAB30;
-        public const nint HostStateMgr001 = 0x37D230;
-        public const nint INETSUPPORT_001 = 0x59A6A0;
-        public const nint InputService_001 = 0x3E0040;
-        public const nint KeyValueCache001 = 0x380900;
-        public const nint MapListService_001 = 0x3FCF20;
-        public const nint NetworkClientService_001 = 0x4222C0;
-        public const nint NetworkP2PService_001 = 0x439070;
-        public const nint NetworkServerService_001 = 0x402EF0;
-        public const nint NetworkService_001 = 0x402080;
-        public const nint RenderService_001 = 0x43F210;
-        public const nint ScreenshotService001 = 0x442D70;
-        public const nint SimpleEngineLoopService_001 = 0x3A32B0;
-        public const nint SoundService_001 = 0x448E30;
-        public const nint Source2EngineToClient001 = 0x4F6660;
-        public const nint Source2EngineToClientStringTable001 = 0x4B9850;
-        public const nint Source2EngineToServer001 = 0x526EE0;
-        public const nint Source2EngineToServerStringTable001 = 0x502090;
-        public const nint SplitScreenService_001 = 0x453780;
-        public const nint StatsService_001 = 0x457B70;
-        public const nint ToolService_001 = 0x45D6F0;
-        public const nint VENGINE_GAMEUIFUNCS_VERSION005 = 0x5E5CF0;
-        public const nint VProfService_001 = 0x45F190;
+        public const nint BenchmarkService001 = 0x3CDC50;
+        public const nint BugBugService001 = 0x3C8540;
+        public const nint BugService001 = 0x3C84D0;
+        public const nint ClientServerEngineLoopService_001 = 0x3841D0;
+        public const nint ClientServerSharedHandleSystem001 = 0x34C290;
+        public const nint EngineGameUI001 = 0x5E6730;
+        public const nint EngineServiceMgr001 = 0x36FE40;
+        public const nint GameEventSystemClientV001 = 0x376030;
+        public const nint GameEventSystemServerV001 = 0x376040;
+        public const nint GameResourceServiceClientV001 = 0x3CFE30;
+        public const nint GameResourceServiceServerV001 = 0x3CFE40;
+        public const nint GameUIService_001 = 0x3DAB70;
+        public const nint HostStateMgr001 = 0x37D270;
+        public const nint INETSUPPORT_001 = 0x59A860;
+        public const nint InputService_001 = 0x3E0080;
+        public const nint KeyValueCache001 = 0x380940;
+        public const nint MapListService_001 = 0x3FD080;
+        public const nint NetworkClientService_001 = 0x422440;
+        public const nint NetworkP2PService_001 = 0x4391F0;
+        public const nint NetworkServerService_001 = 0x403050;
+        public const nint NetworkService_001 = 0x4021E0;
+        public const nint RenderService_001 = 0x43F390;
+        public const nint ScreenshotService001 = 0x442EF0;
+        public const nint SimpleEngineLoopService_001 = 0x3A32F0;
+        public const nint SoundService_001 = 0x448FB0;
+        public const nint Source2EngineToClient001 = 0x4F67E0;
+        public const nint Source2EngineToClientStringTable001 = 0x4B99D0;
+        public const nint Source2EngineToServer001 = 0x5270A0;
+        public const nint Source2EngineToServerStringTable001 = 0x502210;
+        public const nint SplitScreenService_001 = 0x453900;
+        public const nint StatsService_001 = 0x457CF0;
+        public const nint ToolService_001 = 0x45D870;
+        public const nint VENGINE_GAMEUIFUNCS_VERSION005 = 0x5E5EF0;
+        public const nint VProfService_001 = 0x45F310;
     }
     // Module: libfilesystem_stdio.so
     public static class LibfilesystemStdioSo {
@@ -126,8 +126,8 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: librendersystemvulkan.so
     public static class LibrendersystemvulkanSo {
-        public const nint RenderDeviceMgr001 = 0x56FAB0;
-        public const nint RenderUtils_001 = 0x4B6200;
+        public const nint RenderDeviceMgr001 = 0x56FC30;
+        public const nint RenderUtils_001 = 0x4B6280;
     }
     // Module: libresourcesystem.so
     public static class LibresourcesystemSo {
@@ -146,16 +146,16 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libserver.so
     public static class LibserverSo {
-        public const nint EmptyWorldService001_Server = 0x13FC970;
-        public const nint EntitySubclassUtilsV001 = 0xEC9B00;
-        public const nint NavGameTest001 = 0x1D5B8E0;
-        public const nint ServerToolsInfo_001 = 0x198DB40;
-        public const nint Source2GameClients001 = 0x198DB30;
-        public const nint Source2GameDirector001 = 0xACD110;
-        public const nint Source2GameEntities001 = 0x198DAC0;
-        public const nint Source2Server001 = 0x198D840;
-        public const nint Source2ServerConfig001 = 0x1340180;
-        public const nint customnavsystem001 = 0xD13780;
+        public const nint EmptyWorldService001_Server = 0x13FAA10;
+        public const nint EntitySubclassUtilsV001 = 0xEC9280;
+        public const nint NavGameTest001 = 0x1D56360;
+        public const nint ServerToolsInfo_001 = 0x198C300;
+        public const nint Source2GameClients001 = 0x198C2F0;
+        public const nint Source2GameDirector001 = 0xACC440;
+        public const nint Source2GameEntities001 = 0x198C280;
+        public const nint Source2Server001 = 0x198C000;
+        public const nint Source2ServerConfig001 = 0x133E080;
+        public const nint customnavsystem001 = 0xD12EC0;
     }
     // Module: libsoundsystem.so
     public static class LibsoundsystemSo {
@@ -171,10 +171,10 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libtier0.so
     public static class Libtier0So {
-        public const nint TestScriptMgr001 = 0x24AB50;
-        public const nint VEngineCvar007 = 0x156520;
-        public const nint VProcessUtils002 = 0x2370F0;
-        public const nint VStringTokenSystem001 = 0x279490;
+        public const nint TestScriptMgr001 = 0x24ACD0;
+        public const nint VEngineCvar007 = 0x156560;
+        public const nint VProcessUtils002 = 0x237270;
+        public const nint VStringTokenSystem001 = 0x279610;
     }
     // Module: libv8system.so
     public static class Libv8systemSo {
@@ -194,27 +194,27 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: steamclient.so
     public static class SteamclientSo {
-        public const nint CLIENTENGINE_INTERFACE_VERSION005 = 0x1617530;
-        public const nint IVALIDATE001 = 0x1612F00;
-        public const nint SteamClient006 = 0x12A06D0;
-        public const nint SteamClient007 = 0x12A06E0;
-        public const nint SteamClient008 = 0x12A06F0;
-        public const nint SteamClient009 = 0x12A0700;
-        public const nint SteamClient010 = 0x12A0710;
-        public const nint SteamClient011 = 0x12A0720;
-        public const nint SteamClient012 = 0x12A0730;
-        public const nint SteamClient013 = 0x12A0740;
-        public const nint SteamClient014 = 0x12A0750;
-        public const nint SteamClient015 = 0x12A0760;
-        public const nint SteamClient016 = 0x12A0790;
-        public const nint SteamClient017 = 0x12A07C0;
-        public const nint SteamClient018 = 0x12A07F0;
-        public const nint SteamClient019 = 0x12A0820;
-        public const nint SteamClient020 = 0x12A0850;
-        public const nint SteamClient021 = 0x12A0880;
-        public const nint SteamClient022 = 0x12A08B0;
-        public const nint SteamClient023 = 0x12A08E0;
-        public const nint p2pvoice002 = 0x1EF33A0;
-        public const nint p2pvoicesingleton002 = 0x1EEBAD0;
+        public const nint CLIENTENGINE_INTERFACE_VERSION005 = 0x1617740;
+        public const nint IVALIDATE001 = 0x1613110;
+        public const nint SteamClient006 = 0x12A2230;
+        public const nint SteamClient007 = 0x12A2240;
+        public const nint SteamClient008 = 0x12A2250;
+        public const nint SteamClient009 = 0x12A2260;
+        public const nint SteamClient010 = 0x12A2270;
+        public const nint SteamClient011 = 0x12A2280;
+        public const nint SteamClient012 = 0x12A2290;
+        public const nint SteamClient013 = 0x12A22A0;
+        public const nint SteamClient014 = 0x12A22B0;
+        public const nint SteamClient015 = 0x12A22C0;
+        public const nint SteamClient016 = 0x12A22F0;
+        public const nint SteamClient017 = 0x12A2320;
+        public const nint SteamClient018 = 0x12A2350;
+        public const nint SteamClient019 = 0x12A2380;
+        public const nint SteamClient020 = 0x12A23B0;
+        public const nint SteamClient021 = 0x12A23E0;
+        public const nint SteamClient022 = 0x12A2410;
+        public const nint SteamClient023 = 0x12A2440;
+        public const nint p2pvoice002 = 0x1EF4770;
+        public const nint p2pvoicesingleton002 = 0x1EECEA0;
     }
 }

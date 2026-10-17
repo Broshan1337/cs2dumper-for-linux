@@ -1,29 +1,29 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-06 19:38:53.279116825 UTC
+// 2026-10-15 15:40:22.041023216 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint dwCSGOInput = 0x4951AC0;
-        public const nint dwEntityList = 0x46BEB00;
-        public const nint dwGameEntitySystem = 0x4B91050;
+        public const nint dwCSGOInput = 0x4955FC0;
+        public const nint dwEntityList = 0x46C3000;
+        public const nint dwGameEntitySystem = 0x4B95610;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x2120;
-        public const nint dwGameRules = 0x493ABF0;
-        public const nint dwGlobalVars = 0x4683858;
-        public const nint dwGlowManager = 0x4935258;
-        public const nint dwLocalPlayerController = 0x4903F18;
-        public const nint dwLocalPlayerPawn = 0x493BFD8;
-        public const nint dwPlantedC4 = 0x47C22C8;
-        public const nint dwPrediction = 0x493BE90;
-        public const nint dwSensitivity = 0x493A0F8;
+        public const nint dwGameRules = 0x493F0F0;
+        public const nint dwGlobalVars = 0x4687D38;
+        public const nint dwGlowManager = 0x49397B8;
+        public const nint dwLocalPlayerController = 0x49083B8;
+        public const nint dwLocalPlayerPawn = 0x49404D8;
+        public const nint dwPlantedC4 = 0x47C67C8;
+        public const nint dwPrediction = 0x4940390;
+        public const nint dwSensitivity = 0x493E5F8;
         public const nint dwSensitivity_sensitivity = 0x58;
-        public const nint dwViewMatrix = 0x4943600;
-        public const nint dwViewRender = 0x4943710;
+        public const nint dwViewMatrix = 0x4947B00;
+        public const nint dwViewRender = 0x4947C10;
     }
     // Module: libengine2.so
     public static class Libengine2So {
-        public const nint dwBuildNumber = 0x9F60FC;
-        public const nint dwNetworkGameClient = 0xA477C0;
+        public const nint dwBuildNumber = 0x9F62FC;
+        public const nint dwNetworkGameClient = 0xA479C0;
         public const nint dwNetworkGameClient_clientTickCount = 0x3A8;
         public const nint dwNetworkGameClient_deltaTick = 0x3AC;
         public const nint dwNetworkGameClient_isBackgroundMap = 0x288;
@@ -31,8 +31,8 @@ namespace CS2Dumper.Offsets {
         public const nint dwNetworkGameClient_maxClients = 0x240;
         public const nint dwNetworkGameClient_serverTickCount = 0x25C;
         public const nint dwNetworkGameClient_signOnState = 0x284;
-        public const nint dwWindowHeight = 0xA01164;
-        public const nint dwWindowWidth = 0xA01160;
+        public const nint dwWindowHeight = 0xA01364;
+        public const nint dwWindowWidth = 0xA01360;
     }
     // Module: libinputsystem.so
     public static class LibinputsystemSo {
