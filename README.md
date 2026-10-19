@@ -11,7 +11,7 @@ on current Rust, matches `main`'s output format, and dumps cleanly against the c
 
 **Status:** dumped against the latest CS2 update (2026-10-15 build, `1.41.9.1` / 14191): all
 signatures match, `info.json` carries the build number, and the dump now includes
-`vtables.json` — every class vtable per module with its slot functions. The
+`vtables.json` - every class vtable per module with its slot functions. The
 `output_sept*_backup/` directories are dumps of older builds, kept around for comparison.
 `dwViewAngles` was **removed**: the static viewangles mirror it pointed at no longer exists
 in `1.41.8.9` (the raw viewangles now live inside the `CSGOInput` object, not at a module
@@ -55,7 +55,7 @@ cargo build --release
 
 ## Usage
 
-1. Start CS2 and get to the main menu — that is enough, you do not need to be in a match.
+1. Start CS2 and get to the main menu - that is enough, you do not need to be in a match.
 2. Run the dumper from the repository root (`config.json` and `output/` are resolved from the working
    directory):
 
@@ -105,7 +105,7 @@ operations applied in order to turn the match into a module-relative offset:
 | `add` / `sub` | Adjust the current address by `value`. |
 | `slice` | Read bytes `start..end` and interpret them as a little-endian integer. |
 
-Interfaces are not listed there — they are resolved from the `CreateInterface` export instead.
+Interfaces are not listed there - they are resolved from the `CreateInterface` export instead.
 
 ### After a game update
 
@@ -115,8 +115,8 @@ tools/verify_signatures.py
 
 This checks every signature against the installed binaries and replays its operation chain, showing
 the offset each currently resolves to, without attaching to the game. It exits non-zero if anything no
-longer matches, so it drops into a script. An `AMBIGUOUS` result is not necessarily a failure —
-several matches can resolve to the same address — so check the offset column before changing anything.
+longer matches, so it drops into a script. An `AMBIGUOUS` result is not necessarily a failure  -
+several matches can resolve to the same address - so check the offset column before changing anything.
 
 ## Output
 
@@ -128,12 +128,12 @@ build number and a timestamp. Module names are slugified, so `libclient.so` beco
 scanned from live memory (already-relocated pointers, no ELF reloc bookkeeping) and keyed by the
 demangled RTTI class name, so the same class keeps its key across builds and slot drift is directly
 diffable. Slot extraction is deterministic across builds: a table ends at the next validated
-vtable header or after three consecutive non-code entries — so a slot-count change or a
+vtable header or after three consecutive non-code entries - so a slot-count change or a
 non-uniform per-slot shift in the diff means the class's vtable layout really moved.
 
 ### After a game update
 
-1. Run the dumper once (game running, no sudo needed — same-user memory access).
+1. Run the dumper once (game running, no sudo needed - same-user memory access).
 2. Diff against the previous dump:
 
 ```sh
@@ -142,20 +142,20 @@ tools/diff_dumps.py output_old output_new
 
 It reports moved/added/removed offsets, interfaces and buttons (with shift annotations), per-module
 schema field changes (renames, offset changes, added/removed classes), and vtable drift per class:
-uniform shifts (plain recompile — expected), slot-count changes, and non-uniform per-slot shifts
-(slot semantics may have moved — re-derive those slots before trusting vtable-indexed code).
+uniform shifts (plain recompile - expected), slot-count changes, and non-uniform per-slot shifts
+(slot semantics may have moved - re-derive those slots before trusting vtable-indexed code).
 
 ## anti-cheat-helper
 
 `anti-cheat-helper/` is a standalone Windows tool (Visual Studio solution) for understanding what
 an anti-cheat actually does inside a process:
 
-- **hook_checker** — snapshots a module's `.text` section from disk, applies relocations, and
+- **hook_checker** - snapshots a module's `.text` section from disk, applies relocations, and
   compares the snapshot against live memory to detect inline hooks: who hooked what, and where.
-- **Vac3/**, **scanner/**, **decoder/** — tooling around the VAC3 anti-cheat module: emulating and
+- **Vac3/**, **scanner/**, **decoder/** - tooling around the VAC3 anti-cheat module: emulating and
   scanning it to see what VAC modules actually look for.
 
-It is meant as a research aid to pair with the dumps — knowing the offsets is one half, knowing
+It is meant as a research aid to pair with the dumps - knowing the offsets is one half, knowing
 what the anti-cheat reads is the other.
 
 ## Credits
